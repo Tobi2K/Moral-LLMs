@@ -1,53 +1,5 @@
 condor_exec.exe: cannot set terminal process group (-1): Inappropriate ioctl for device
 condor_exec.exe: no job control in this shell
-Traceback (most recent call last):
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/huggingface_hub/utils/_errors.py", line 261, in hf_raise_for_status
-    response.raise_for_status()
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 430, in cached_file
-    resolved_file = hf_hub_download(
-                    ^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1232, in hf_hub_download
-    metadata = get_hf_file_metadata(
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1608, in get_hf_file_metadata
-    hf_raise_for_status(r)
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/huggingface_hub/utils/_errors.py", line 271, in hf_raise_for_status
-    raise EntryNotFoundError(message, response) from e
-huggingface_hub.utils._errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-654f2d2b-05cfcadb2ccba60e5a61757b;2e95b8b3-7b82-430b-b3f8-226de662ec14)
-
-Entry Not Found for url: https://huggingface.co/meta-llama/Llama-2-7b/resolve/main/config.json.
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/var/lib/condor/execute/dir_2476644/test-prompt.py", line 7, in <module>
-    tokenizer = AutoTokenizer.from_pretrained(model)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 733, in from_pretrained
-    config = AutoConfig.from_pretrained(
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/auto/configuration_auto.py", line 1048, in from_pretrained
-    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
-                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/configuration_utils.py", line 622, in get_config_dict
-    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/configuration_utils.py", line 677, in _get_config_dict
-    resolved_config_file = cached_file(
-                           ^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 481, in cached_file
-    raise EnvironmentError(
-OSError: meta-llama/Llama-2-7b does not appear to have a file named config.json. Checkout 'https://huggingface.co/meta-llama/Llama-2-7b/main' for available files.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.75s/it]
+/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py:2856: UserWarning: No PYTORCH_KERNEL_CACHE_PATH or HOME environment variable set! This disables kernel caching. (Triggered internally at /opt/conda/conda-bld/pytorch_1695392026823/work/aten/src/ATen/native/cuda/jit_utils.cpp:1426.)
+  next_tokens.tile(eos_token_id_tensor.shape[0], 1).ne(eos_token_id_tensor.unsqueeze(1)).prod(dim=0)
