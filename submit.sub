@@ -1,0 +1,9 @@
+executable 		= /bin/bash
+arguments  		= -i conda_activate.sh venv test-prompt.py 
+log        		= conda_test.log
+transfer_input_files 	= conda_activate.sh, test-prompt.py
+output 			= stdout.txt
+error			= stderr.txt
+should_transfer_files   = IF_NEEDED
+request_gpus		= 1
+queue
