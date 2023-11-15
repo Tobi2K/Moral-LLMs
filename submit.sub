@@ -1,7 +1,7 @@
 executable 		= /bin/bash
 arguments  		= -i conda_activate.sh venv prompt-machine.py 
 log        		= prompting.log
-transfer_input_files 	= conda_activate.sh, prompt-machine.py
+transfer_input_files 	= conda_activate.sh, prompt-machine.py, prompt.json
 output 			= stdout.txt
 error			= stderr.txt
 should_transfer_files   = IF_NEEDED
