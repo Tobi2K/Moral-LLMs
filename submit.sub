@@ -6,4 +6,6 @@ output 			= stdout.txt
 error			= stderr.txt
 should_transfer_files   = IF_NEEDED
 request_gpus		= 1
+notification    = Always
+notify_user     = tobias.kalmbach@stud.uni-hannover.de
 queue

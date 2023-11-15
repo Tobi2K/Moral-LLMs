@@ -26,10 +26,10 @@ def run_prompt_on_model(model_name, prompt, prompt_title=""):
     with open(model.replace('/', '') + cur_date + prompt_title + '.txt', 'w') as f:
         for seq in sequences:
             print(f"Result: {seq['generated_text']}")
-            f.write(f"Model: {model_name}")
-            f.write(f"Date: {datetime.datetime.now()}")
-            f.write(f"Prompt: {prompt}")
-            f.write(f"Result: {seq['generated_text']}")
+            f.write(f"Model: {model_name}\n\n")
+            f.write(f"Date: {datetime.datetime.now()}\n\n")
+            f.write(f"Prompt: {prompt}\n\n")
+            f.write(f"Result: {seq['generated_text']}\n")
 
 
 if __name__ == "__main__":
