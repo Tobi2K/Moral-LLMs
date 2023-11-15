@@ -1,5 +1,5 @@
 condor_exec.exe: cannot set terminal process group (-1): Inappropriate ioctl for device
 condor_exec.exe: no job control in this shell
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.75s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.32s/it]
 /home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py:2856: UserWarning: No PYTORCH_KERNEL_CACHE_PATH or HOME environment variable set! This disables kernel caching. (Triggered internally at /opt/conda/conda-bld/pytorch_1695392026823/work/aten/src/ATen/native/cuda/jit_utils.cpp:1426.)
   next_tokens.tile(eos_token_id_tensor.shape[0], 1).ne(eos_token_id_tensor.unsqueeze(1)).prod(dim=0)
