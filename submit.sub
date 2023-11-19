@@ -1,6 +1,6 @@
 executable 		= /bin/bash
 arguments  		= -i activate.sh venv prompt-machine.py 
-log        		= condor.log
+log        		= default.log
 transfer_input_files 	= activate.sh, prompt-machine.py, prompt.json
 output 			= stdout.txt
 error			= stderr.txt
