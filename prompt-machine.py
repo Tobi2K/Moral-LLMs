@@ -62,6 +62,6 @@ if __name__ == "__main__":
         # convert back to json.
         json.dump(file_data, file, indent=4)
 
-    # for model in models:
-    #     run_prompt_on_model(model_name=model, prompt=prompt,
-    #                         prompt_title=prompt_title)
+    for model in models:
+        run_prompt_on_model(model_name=model, prompt=prompt,
+                            prompt_title=prompt_title)
