@@ -1,0 +1,121 @@
+000 (11630.000.000) 2023-11-19 20:20:11 Job submitted from host: <10.10.1.131:9618?addrs=10.10.1.131-9618&alias=pascal-condor01.l3s.intra&noUDP&sock=schedd_837_b0dc>
+...
+040 (11630.000.000) 2023-11-19 20:20:11 Started transferring input files
+	Transferring to host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=slot1_3_922_61df_1080>
+...
+040 (11630.000.000) 2023-11-19 20:20:11 Finished transferring input files
+...
+001 (11630.000.000) 2023-11-19 20:20:12 Job executing on host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=startd_876_710d>
+...
+006 (11630.000.000) 2023-11-19 20:20:18 Image size of job updated: 1250
+	4  -  MemoryUsage of job (MB)
+	3376  -  ResidentSetSize of job (KB)
+...
+040 (11630.000.000) 2023-11-19 20:20:18 Started transferring output files
+...
+040 (11630.000.000) 2023-11-19 20:20:18 Finished transferring output files
+...
+005 (11630.000.000) 2023-11-19 20:20:18 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4779  -  Run Bytes Sent By Job
+	1241430  -  Run Bytes Received By Job
+	4779  -  Total Bytes Sent By Job
+	1241430  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     1224     1250    155034 
+	   Gpus (Average)       :                 1         1 "CUDA0"
+	   Memory (MB)          :        4        2       128 
+
+	Job terminated of its own accord at 2023-11-19T19:20:18Z with exit-code 0.
+...
+000 (11631.000.000) 2023-11-19 20:23:54 Job submitted from host: <10.10.1.131:9618?addrs=10.10.1.131-9618&alias=pascal-condor01.l3s.intra&noUDP&sock=schedd_837_b0dc>
+...
+040 (11631.000.000) 2023-11-19 20:24:11 Started transferring input files
+	Transferring to host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=slot1_3_922_61df_1081>
+...
+040 (11631.000.000) 2023-11-19 20:24:11 Finished transferring input files
+...
+001 (11631.000.000) 2023-11-19 20:24:12 Job executing on host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=startd_876_710d>
+...
+006 (11631.000.000) 2023-11-19 20:24:20 Image size of job updated: 3397436
+	387  -  MemoryUsage of job (MB)
+	395604  -  ResidentSetSize of job (KB)
+...
+006 (11631.000.000) 2023-11-19 20:29:20 Image size of job updated: 39691164
+	14912  -  MemoryUsage of job (MB)
+	15269156  -  ResidentSetSize of job (KB)
+...
+006 (11631.000.000) 2023-11-19 20:31:55 Image size of job updated: 39723932
+	14912  -  MemoryUsage of job (MB)
+	15269156  -  ResidentSetSize of job (KB)
+...
+040 (11631.000.000) 2023-11-19 20:31:55 Started transferring output files
+...
+040 (11631.000.000) 2023-11-19 20:31:55 Finished transferring output files
+...
+005 (11631.000.000) 2023-11-19 20:31:55 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:04:19, Sys 0 00:00:33  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:04:19, Sys 0 00:00:33  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4622  -  Run Bytes Sent By Job
+	1239884  -  Run Bytes Received By Job
+	4622  -  Total Bytes Sent By Job
+	1239884  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  1234        1250    155034 
+	   Gpus (Average)       :                 1         1 "CUDA0"
+	   Memory (MB)          : 14912           2       128 
+
+	Job terminated of its own accord at 2023-11-19T19:31:55Z with exit-code 1.
+...
+000 (11632.000.000) 2023-11-19 20:54:42 Job submitted from host: <10.10.1.131:9618?addrs=10.10.1.131-9618&alias=pascal-condor01.l3s.intra&noUDP&sock=schedd_837_b0dc>
+...
+040 (11632.000.000) 2023-11-19 20:54:42 Started transferring input files
+	Transferring to host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=slot1_3_922_61df_1083>
+...
+040 (11632.000.000) 2023-11-19 20:54:42 Finished transferring input files
+...
+001 (11632.000.000) 2023-11-19 20:54:43 Job executing on host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=startd_876_710d>
+...
+006 (11632.000.000) 2023-11-19 20:54:52 Image size of job updated: 3417020
+	404  -  MemoryUsage of job (MB)
+	413324  -  ResidentSetSize of job (KB)
+...
+006 (11632.000.000) 2023-11-19 20:59:53 Image size of job updated: 39920472
+	14929  -  MemoryUsage of job (MB)
+	15286980  -  ResidentSetSize of job (KB)
+...
+006 (11632.000.000) 2023-11-19 21:02:38 Image size of job updated: 48949924
+	14929  -  MemoryUsage of job (MB)
+	15286980  -  ResidentSetSize of job (KB)
+...
+040 (11632.000.000) 2023-11-19 21:02:38 Started transferring output files
+...
+040 (11632.000.000) 2023-11-19 21:02:38 Finished transferring output files
+...
+005 (11632.000.000) 2023-11-19 21:02:38 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:07:28, Sys 0 00:00:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:07:28, Sys 0 00:00:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	13679  -  Run Bytes Sent By Job
+	1240687  -  Run Bytes Received By Job
+	13679  -  Total Bytes Sent By Job
+	1240687  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :  1239        1250    155034 
+	   Gpus (Average)       :                 1         1 "CUDA0"
+	   Memory (MB)          : 14929           2       128 
+
+	Job terminated of its own accord at 2023-11-19T20:02:38Z with exit-code 1.
+...
