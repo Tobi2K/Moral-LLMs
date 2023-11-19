@@ -34,7 +34,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
         for _ in range(runs_with_context):
             cur_date = str(datetime.datetime.now()).replace(
                 ' ', '--').replace(':', '').replace('.', '')
-            with open('logs/' + model.replace('/', '') + cur_date + prompt_title + '.txt', 'w') as f:
+            with open('/home/tobias.kalmbach/Moral-LLMs/logs/' + model.replace('/', '') + cur_date + prompt_title + '.txt', 'w') as f:
                 for seq in sequences:
                     print(f"Result: {seq['generated_text']}")
                     f.write(f"Model: {model_name}\n\n")
