@@ -119,3 +119,42 @@
 
 	Job terminated of its own accord at 2023-11-19T20:02:38Z with exit-code 1.
 ...
+000 (11633.000.000) 2023-11-19 21:12:54 Job submitted from host: <10.10.1.131:9618?addrs=10.10.1.131-9618&alias=pascal-condor01.l3s.intra&noUDP&sock=schedd_837_b0dc>
+...
+040 (11633.000.000) 2023-11-19 21:12:54 Started transferring input files
+	Transferring to host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=slot1_3_922_61df_1084>
+...
+040 (11633.000.000) 2023-11-19 21:12:54 Finished transferring input files
+...
+001 (11633.000.000) 2023-11-19 21:12:55 Job executing on host: <10.10.1.154:9618?addrs=10.10.1.154-9618&alias=pascal-node04.l3s.intra&noUDP&sock=startd_876_710d>
+...
+006 (11633.000.000) 2023-11-19 21:13:04 Image size of job updated: 1250
+	4  -  MemoryUsage of job (MB)
+	3364  -  ResidentSetSize of job (KB)
+...
+006 (11633.000.000) 2023-11-19 21:13:12 Image size of job updated: 23921444
+	1899  -  MemoryUsage of job (MB)
+	1943568  -  ResidentSetSize of job (KB)
+...
+040 (11633.000.000) 2023-11-19 21:13:12 Started transferring output files
+...
+040 (11633.000.000) 2023-11-19 21:13:12 Finished transferring output files
+...
+005 (11633.000.000) 2023-11-19 21:13:12 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:04, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:04, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	7572  -  Run Bytes Sent By Job
+	1241476  -  Run Bytes Received By Job
+	7572  -  Total Bytes Sent By Job
+	1241476  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :     1229     1250    155034 
+	   Gpus (Average)       :                 1         1 "CUDA0"
+	   Memory (MB)          :     1899        2       128 
+
+	Job terminated of its own accord at 2023-11-19T20:13:12Z with exit-code 1.
+...

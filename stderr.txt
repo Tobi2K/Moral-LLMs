@@ -1,82 +1,30 @@
 condor_exec.exe: cannot set terminal process group (-1): Inappropriate ioctl for device
 condor_exec.exe: no job control in this shell
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.65s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.98s/it]
-/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py:2856: UserWarning: No PYTORCH_KERNEL_CACHE_PATH or HOME environment variable set! This disables kernel caching. (Triggered internally at /opt/conda/conda-bld/pytorch_1695392026823/work/aten/src/ATen/native/cuda/jit_utils.cpp:1426.)
-  next_tokens.tile(eos_token_id_tensor.shape[0], 1).ne(eos_token_id_tensor.unsqueeze(1)).prod(dim=0)
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.26s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.80s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.43s/it]
 Traceback (most recent call last):
-  File "/var/lib/condor/execute/dir_1604898/prompt-machine.py", line 66, in <module>
+  File "/var/lib/condor/execute/dir_1605346/prompt-machine.py", line 66, in <module>
     run_prompt_on_model(model_name=model, prompt=prompt,
-  File "/var/lib/condor/execute/dir_1604898/prompt-machine.py", line 26, in run_prompt_on_model
-    sequences = pipeline(
-                ^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1140, in __call__
-    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1147, in run_single
-    model_outputs = self.forward(model_inputs, **forward_params)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-           ^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-              ^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 1034, in forward
-    outputs = self.model(
-              ^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 922, in forward
-    layer_outputs = decoder_layer(
-                    ^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 672, in forward
-    hidden_states, self_attn_weights, present_key_value = self.self_attn(
-                                                          ^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/llama/modeling_llama.py", line 366, in forward
-    query_states = self.q_proj(hidden_states)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 114, in forward
-    return F.linear(input, self.weight, self.bias)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: "addmm_impl_cpu_" not implemented for 'Half'
+  File "/var/lib/condor/execute/dir_1605346/prompt-machine.py", line 20, in run_prompt_on_model
+    pipeline = transformers.pipeline(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 870, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 269, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 566, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3480, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3870, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 743, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/accelerate/utils/modeling.py", line 317, in set_module_tensor_to_device
+    new_value = value.to(device)
+                ^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 86.00 MiB. GPU 0 has a total capacty of 10.92 GiB of which 45.44 MiB is free. Including non-PyTorch memory, this process has 10.87 GiB memory in use. Of the allocated memory 10.37 GiB is allocated by PyTorch, and 1.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
