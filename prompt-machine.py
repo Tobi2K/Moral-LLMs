@@ -16,12 +16,12 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
         runs_with_reset = reruns
     
     for _ in range(runs_with_reset):
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
+        tokenizer = AutoTokenizer.from_pretrained(model_name, device_map="cuda")
         pipeline = transformers.pipeline(
             "text-generation",
             model=model_name,
             torch_dtype=torch.float16,
-            device_map="auto",
+            device_map="cuda",
         )
         sequences = pipeline(
             prompt,
