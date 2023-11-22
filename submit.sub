@@ -1,13 +1,13 @@
-executable 		= /bin/bash
-arguments  		= -i activate.sh venv prompt-machine.py 
-log        		= default.log
+executable 		        = /bin/bash
+arguments  		        = -i activate.sh venv prompt-machine.py 
+log        		        = default.log
 transfer_input_files 	= activate.sh, prompt-machine.py, prompt.json
-output 			= stdout.txt
-error			= stderr.txt
+output 			        = stdout.txt
+error			        = stderr.txt
 should_transfer_files   = IF_NEEDED
-request_memory  = 25 GB
-request_gpus		= 1
-requirements = (GPUs_GlobalMemoryMB >= 15000)
-notification    = Always
-notify_user     = tobias.kalmbach@stud.uni-hannover.de
+request_memory          = 25 GB
+request_gpus		    = 2
+requirements            = (TARGET.MACHINE == "pascal-node01.l3s.intra") 
+notification            = Always
+notify_user             = tobias.kalmbach@stud.uni-hannover.de
 queue
