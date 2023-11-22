@@ -5,7 +5,7 @@ transfer_input_files 	= activate.sh, prompt-machine.py, prompt.json
 output 			= stdout.txt
 error			= stderr.txt
 should_transfer_files   = IF_NEEDED
-request_memory  = 5 GB
+request_memory  = 25 GB
 request_gpus		= 1
 requirements = (GPUs_GlobalMemoryMB >= 15000)
 notification    = Always
