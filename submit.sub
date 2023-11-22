@@ -6,6 +6,7 @@ output 			        = stdout.txt
 error			        = stderr.txt
 should_transfer_files   = IF_NEEDED
 request_memory          = 25 GB
+request_cpus            = 4
 request_gpus		    = 2
 requirements            = (TARGET.MACHINE == "pascal-node01.l3s.intra") 
 notification            = Always
