@@ -19,8 +19,9 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
     
     for _ in range(runs_with_reset):
         if use_ctransformers:
-            model = AutoModelForCausalLM.from_pretrained(model_name, hf=True)
-            tokenizer = ctransformers.AutoTokenizer.from_pretrained(model)
+            name, file_name, model_type = model_name
+            model = AutoModelForCausalLM.from_pretrained(name, model_file=file_name, model_type=model_type, gpu_layers=50)
+            tokenizer = ctransformers.AutoTokenizer.from_pretrained(model_type)
         else:
             model=model_name
             tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -53,7 +54,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
 if __name__ == "__main__":
     models = ["meta-llama/Llama-2-7b-hf", "meta-llama/Llama-2-7b-chat-hf", "meta-llama/Llama-2-13b-hf", "meta-llama/Llama-2-13b-chat-hf", "georgesung/llama2_7b_chat_uncensored", "Tap-M/Luna-AI-Llama2-Uncensored"]
 
-    ctransformer_models = ["TheBloke/Mistral-7B-OpenOrca-GGUF", "TheBloke/Nous-Capybara-7B-GGUF"]
+    ctransformer_models = [("TheBloke/Nous-Capybara-7B-GGUF", "nous-capybara-7b.Q4_K_M.gguf", "llama"), ("TheBloke/Mistral-7B-OpenOrca-GGUF", "mistral-7b-openorca.Q4_K_M.gguf", "mistral")]
     
     prompt_title = "Classic-Trolley-1-VS-5"
 
@@ -72,6 +73,7 @@ if __name__ == "__main__":
         json.dump(file_data, file, indent=4)
 
     for model in models:
+        break
         run_prompt_on_model(model_name=model, prompt=prompt,
                             prompt_title=prompt_title)
         
