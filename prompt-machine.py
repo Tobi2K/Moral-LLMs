@@ -22,7 +22,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
             tokenizer = AutoTokenizer.from_pretrained(model)
         else:
             model=model_name
-            tokenizer = AutoTokenizer.from_pretrained(model_name, device_map="cuda")
+            tokenizer = AutoTokenizer.from_pretrained(model_name)
         pipeline = transformers.pipeline(
             "text-generation",
             model=model,
