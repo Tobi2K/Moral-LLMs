@@ -10,4 +10,4 @@ sentencepiece
 scipy
 peft
 tensorboardX
-ctransformers
+ctransformers[cuda]
