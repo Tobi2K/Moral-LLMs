@@ -1,6 +1,7 @@
 from transformers import AutoTokenizer
-from ctransformers import AutoModelForCausalLM, AutoTokenizer
+from ctransformers import AutoModelForCausalLM
 import transformers
+import ctransformers
 import torch
 import datetime
 import json
@@ -19,7 +20,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
     for _ in range(runs_with_reset):
         if use_ctransformers:
             model = AutoModelForCausalLM.from_pretrained(model_name, hf=True)
-            tokenizer = AutoTokenizer.from_pretrained(model)
+            tokenizer = ctransformers.AutoTokenizer.from_pretrained(model)
         else:
             model=model_name
             tokenizer = AutoTokenizer.from_pretrained(model_name)
