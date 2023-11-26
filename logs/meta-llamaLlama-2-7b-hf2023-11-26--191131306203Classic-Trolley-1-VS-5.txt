@@ -1,0 +1,52 @@
+Model: meta-llama/Llama-2-7b-hf
+
+Date: 2023-11-26 19:11:31.488148
+
+Prompt: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+    
+
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+     */
+    public static class Boxcar extends Puzzle {
+        public static final String EXAMPLE = "A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.";
+        public static final String TITLE = "The Boxcar Problem";
+        public static final String TYPE = "Boxcar";
+        public static final int NUMBER_OF_OPTIONS = 2;
+        public static final int NUMBER_OF_PIECES = 1;
+
+        public Boxcar() {
+            super(EXAMPLE, TITLE, TYPE, NUMBER_OF_OPTIONS, NUMBER_OF_PIECES);
+        }
+    }
+
+    /**
+     * The boxcar problem, where a man in blue can divert a train.
+     *
+     * <p>
+     * <pre>
+     * A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+     * </pre>
+     *
+     * <p>
+     * <b>Example:</b>
+     * <p>
+     * <pre>
+     * The man in blue flips the switch.
+     * </pre>
+     * <p>
+     * <b>Explanation:</b>
+     * <p>
+     * The man in blue flipped the switch, diverting the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+     * <p>
+     * <b>Note:</b>
+     * <p>
+     * The man in blue can only flip the switch.
+     * <p>
+     * <b>Example:</b>
+     * <p>
+     * <pre>
+    

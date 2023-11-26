@@ -1,9 +1,189 @@
 condor_exec.exe: cannot set terminal process group (-1): Inappropriate ioctl for device
 condor_exec.exe: no job control in this shell
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [04:48<04:48, 288.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [06:16<00:00, 170.34s/it]Loading checkpoint shards: 100%|██████████| 2/2 [06:16<00:00, 188.02s/it]
+/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py:2856: UserWarning: No PYTORCH_KERNEL_CACHE_PATH or HOME environment variable set! This disables kernel caching. (Triggered internally at /opt/conda/conda-bld/pytorch_1695392026823/work/aten/src/ATen/native/cuda/jit_utils.cpp:1426.)
+  next_tokens.tile(eos_token_id_tensor.shape[0], 1).ne(eos_token_id_tensor.unsqueeze(1)).prod(dim=0)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [03:58<03:58, 238.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [05:24<00:00, 149.06s/it]Loading checkpoint shards: 100%|██████████| 2/2 [05:24<00:00, 162.43s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [03:55<07:51, 235.57s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [07:52<03:56, 236.49s/it]Loading checkpoint shards: 100%|██████████| 3/3 [10:19<00:00, 195.56s/it]Loading checkpoint shards: 100%|██████████| 3/3 [10:19<00:00, 206.52s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [03:54<07:48, 234.37s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [07:51<03:55, 235.70s/it]Loading checkpoint shards: 100%|██████████| 3/3 [10:21<00:00, 196.64s/it]Loading checkpoint shards: 100%|██████████| 3/3 [10:21<00:00, 207.05s/it]
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [03:58<07:57, 238.56s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [07:56<03:58, 238.26s/it]Loading checkpoint shards: 100%|██████████| 3/3 [11:00<00:00, 213.63s/it]Loading checkpoint shards: 100%|██████████| 3/3 [11:00<00:00, 220.31s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [04:00<08:01, 240.64s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [08:01<04:01, 241.04s/it]Loading checkpoint shards: 100%|██████████| 3/3 [10:55<00:00, 210.27s/it]Loading checkpoint shards: 100%|██████████| 3/3 [10:55<00:00, 218.54s/it]
+/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Downloading config.json:   0%|          | 0.00/31.0 [00:00<?, ?B/s][ADownloading config.json: 100%|██████████| 31.0/31.0 [00:00<00:00, 100kB/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:01<00:00,  1.18s/it]Fetching 1 files: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]
+Downloading (…)b-openorca.Q2_K.gguf:   0%|          | 0.00/3.08G [00:00<?, ?B/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   0%|          | 10.5M/3.08G [00:00<00:34, 89.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   1%|          | 31.5M/3.08G [00:00<00:29, 103MB/s] [A
+Downloading (…)b-openorca.Q2_K.gguf:   2%|▏         | 52.4M/3.08G [00:00<00:27, 110MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   2%|▏         | 73.4M/3.08G [00:00<00:26, 112MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   3%|▎         | 94.4M/3.08G [00:00<00:26, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   4%|▎         | 115M/3.08G [00:01<00:26, 113MB/s] [A
+Downloading (…)b-openorca.Q2_K.gguf:   4%|▍         | 136M/3.08G [00:01<00:26, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   5%|▌         | 157M/3.08G [00:01<00:25, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   6%|▌         | 178M/3.08G [00:01<00:25, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   6%|▋         | 199M/3.08G [00:01<00:25, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   7%|▋         | 220M/3.08G [00:01<00:25, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   8%|▊         | 241M/3.08G [00:02<00:25, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   9%|▊         | 262M/3.08G [00:02<00:24, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:   9%|▉         | 283M/3.08G [00:02<00:24, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  10%|▉         | 304M/3.08G [00:02<00:24, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  11%|█         | 325M/3.08G [00:02<00:23, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  11%|█         | 346M/3.08G [00:03<00:23, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  12%|█▏        | 367M/3.08G [00:03<00:23, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  13%|█▎        | 388M/3.08G [00:03<00:23, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  13%|█▎        | 409M/3.08G [00:03<00:23, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  14%|█▍        | 430M/3.08G [00:03<00:22, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  15%|█▍        | 451M/3.08G [00:03<00:22, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  15%|█▌        | 472M/3.08G [00:04<00:22, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  16%|█▌        | 493M/3.08G [00:04<00:22, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  17%|█▋        | 514M/3.08G [00:04<00:22, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  17%|█▋        | 535M/3.08G [00:04<00:22, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  18%|█▊        | 556M/3.08G [00:04<00:21, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  19%|█▊        | 577M/3.08G [00:05<00:21, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  19%|█▉        | 598M/3.08G [00:05<00:21, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  20%|██        | 619M/3.08G [00:05<00:21, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  21%|██        | 640M/3.08G [00:05<00:21, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  21%|██▏       | 661M/3.08G [00:05<00:21, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  22%|██▏       | 682M/3.08G [00:05<00:20, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  23%|██▎       | 703M/3.08G [00:06<00:20, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  23%|██▎       | 724M/3.08G [00:06<00:20, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  24%|██▍       | 744M/3.08G [00:06<00:20, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  25%|██▍       | 765M/3.08G [00:06<00:20, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  26%|██▌       | 786M/3.08G [00:06<00:19, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  26%|██▌       | 807M/3.08G [00:07<00:19, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  27%|██▋       | 828M/3.08G [00:07<00:19, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  28%|██▊       | 849M/3.08G [00:07<00:19, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  28%|██▊       | 870M/3.08G [00:07<00:19, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  29%|██▉       | 891M/3.08G [00:07<00:18, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  30%|██▉       | 912M/3.08G [00:07<00:18, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  30%|███       | 933M/3.08G [00:08<00:18, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  31%|███       | 954M/3.08G [00:08<00:18, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  32%|███▏      | 975M/3.08G [00:08<00:18, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  32%|███▏      | 996M/3.08G [00:08<00:18, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  33%|███▎      | 1.02G/3.08G [00:08<00:17, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  34%|███▎      | 1.04G/3.08G [00:09<00:17, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  34%|███▍      | 1.06G/3.08G [00:09<00:17, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  35%|███▌      | 1.08G/3.08G [00:09<00:17, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  36%|███▌      | 1.10G/3.08G [00:09<00:17, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  36%|███▋      | 1.12G/3.08G [00:09<00:16, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  37%|███▋      | 1.14G/3.08G [00:09<00:16, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  38%|███▊      | 1.16G/3.08G [00:10<00:22, 85.5MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  38%|███▊      | 1.18G/3.08G [00:10<00:20, 92.9MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  39%|███▉      | 1.21G/3.08G [00:10<00:19, 98.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  40%|███▉      | 1.23G/3.08G [00:10<00:18, 103MB/s] [A
+Downloading (…)b-openorca.Q2_K.gguf:  40%|████      | 1.25G/3.08G [00:11<00:20, 89.4MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  41%|████      | 1.26G/3.08G [00:11<00:21, 83.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  41%|████▏     | 1.28G/3.08G [00:11<00:19, 90.4MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  42%|████▏     | 1.30G/3.08G [00:11<00:20, 88.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  43%|████▎     | 1.31G/3.08G [00:12<00:22, 80.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  43%|████▎     | 1.32G/3.08G [00:12<00:23, 74.1MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  44%|████▎     | 1.34G/3.08G [00:12<00:20, 85.5MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  44%|████▍     | 1.36G/3.08G [00:12<00:18, 94.3MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  45%|████▍     | 1.37G/3.08G [00:12<00:18, 94.2MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  45%|████▌     | 1.39G/3.08G [00:12<00:16, 101MB/s] [A
+Downloading (…)b-openorca.Q2_K.gguf:  46%|████▌     | 1.42G/3.08G [00:13<00:15, 106MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  47%|████▋     | 1.44G/3.08G [00:13<00:15, 108MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  47%|████▋     | 1.46G/3.08G [00:13<00:14, 110MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  48%|████▊     | 1.48G/3.08G [00:13<00:14, 112MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  49%|████▊     | 1.50G/3.08G [00:13<00:13, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  49%|████▉     | 1.52G/3.08G [00:13<00:13, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  50%|████▉     | 1.54G/3.08G [00:14<00:13, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  51%|█████     | 1.56G/3.08G [00:14<00:13, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  51%|█████▏    | 1.58G/3.08G [00:14<00:13, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  52%|█████▏    | 1.60G/3.08G [00:14<00:12, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  53%|█████▎    | 1.63G/3.08G [00:14<00:12, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  53%|█████▎    | 1.65G/3.08G [00:15<00:12, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  54%|█████▍    | 1.67G/3.08G [00:15<00:12, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  55%|█████▍    | 1.69G/3.08G [00:15<00:12, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  55%|█████▌    | 1.71G/3.08G [00:15<00:11, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  56%|█████▌    | 1.73G/3.08G [00:15<00:11, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  57%|█████▋    | 1.75G/3.08G [00:15<00:11, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  57%|█████▋    | 1.77G/3.08G [00:16<00:11, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  58%|█████▊    | 1.79G/3.08G [00:16<00:11, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  59%|█████▉    | 1.81G/3.08G [00:16<00:11, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  60%|█████▉    | 1.84G/3.08G [00:16<00:10, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  60%|██████    | 1.86G/3.08G [00:16<00:10, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  61%|██████    | 1.88G/3.08G [00:17<00:10, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  62%|██████▏   | 1.90G/3.08G [00:17<00:10, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  62%|██████▏   | 1.92G/3.08G [00:17<00:10, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  63%|██████▎   | 1.94G/3.08G [00:17<00:09, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  64%|██████▎   | 1.96G/3.08G [00:17<00:09, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  64%|██████▍   | 1.98G/3.08G [00:17<00:09, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  65%|██████▍   | 2.00G/3.08G [00:18<00:09, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  66%|██████▌   | 2.02G/3.08G [00:18<00:09, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  66%|██████▋   | 2.04G/3.08G [00:18<00:09, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  67%|██████▋   | 2.07G/3.08G [00:18<00:08, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  68%|██████▊   | 2.09G/3.08G [00:18<00:08, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  68%|██████▊   | 2.11G/3.08G [00:19<00:08, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  69%|██████▉   | 2.13G/3.08G [00:19<00:08, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  70%|██████▉   | 2.15G/3.08G [00:19<00:08, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  70%|███████   | 2.17G/3.08G [00:19<00:07, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  71%|███████   | 2.19G/3.08G [00:19<00:07, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  72%|███████▏  | 2.21G/3.08G [00:19<00:07, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  72%|███████▏  | 2.23G/3.08G [00:20<00:07, 110MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  73%|███████▎  | 2.25G/3.08G [00:20<00:07, 104MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  74%|███████▍  | 2.28G/3.08G [00:20<00:08, 96.6MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  74%|███████▍  | 2.30G/3.08G [00:20<00:07, 101MB/s] [A
+Downloading (…)b-openorca.Q2_K.gguf:  75%|███████▌  | 2.32G/3.08G [00:21<00:07, 105MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  76%|███████▌  | 2.34G/3.08G [00:21<00:06, 108MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  77%|███████▋  | 2.36G/3.08G [00:21<00:06, 110MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  77%|███████▋  | 2.38G/3.08G [00:21<00:06, 112MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  78%|███████▊  | 2.40G/3.08G [00:21<00:06, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  79%|███████▊  | 2.42G/3.08G [00:21<00:05, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  79%|███████▉  | 2.44G/3.08G [00:22<00:05, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  80%|███████▉  | 2.46G/3.08G [00:22<00:05, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  81%|████████  | 2.49G/3.08G [00:22<00:05, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  81%|████████▏ | 2.51G/3.08G [00:22<00:05, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  82%|████████▏ | 2.53G/3.08G [00:22<00:04, 116MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  83%|████████▎ | 2.55G/3.08G [00:23<00:04, 112MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  83%|████████▎ | 2.57G/3.08G [00:23<00:05, 96.5MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  84%|████████▎ | 2.58G/3.08G [00:23<00:05, 93.4MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  84%|████████▍ | 2.59G/3.08G [00:23<00:05, 83.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  84%|████████▍ | 2.60G/3.08G [00:23<00:06, 74.0MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  85%|████████▍ | 2.61G/3.08G [00:23<00:06, 76.6MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  85%|████████▌ | 2.63G/3.08G [00:24<00:05, 78.3MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  86%|████████▌ | 2.65G/3.08G [00:24<00:04, 88.4MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  87%|████████▋ | 2.67G/3.08G [00:24<00:04, 96.4MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  87%|████████▋ | 2.69G/3.08G [00:24<00:03, 102MB/s] [A
+Downloading (…)b-openorca.Q2_K.gguf:  88%|████████▊ | 2.72G/3.08G [00:24<00:03, 106MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  89%|████████▉ | 2.74G/3.08G [00:25<00:03, 101MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  89%|████████▉ | 2.76G/3.08G [00:25<00:03, 105MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  90%|█████████ | 2.78G/3.08G [00:25<00:02, 108MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  91%|█████████ | 2.80G/3.08G [00:25<00:02, 110MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  91%|█████████▏| 2.82G/3.08G [00:25<00:02, 112MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  92%|█████████▏| 2.84G/3.08G [00:26<00:02, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  93%|█████████▎| 2.86G/3.08G [00:26<00:01, 113MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  94%|█████████▎| 2.88G/3.08G [00:26<00:01, 111MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  94%|█████████▍| 2.90G/3.08G [00:26<00:01, 112MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  95%|█████████▍| 2.93G/3.08G [00:26<00:01, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  96%|█████████▌| 2.95G/3.08G [00:26<00:01, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  96%|█████████▌| 2.97G/3.08G [00:27<00:01, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  97%|█████████▋| 2.99G/3.08G [00:27<00:00, 114MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  98%|█████████▊| 3.01G/3.08G [00:27<00:00, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  98%|█████████▊| 3.03G/3.08G [00:27<00:00, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf:  99%|█████████▉| 3.05G/3.08G [00:27<00:00, 115MB/s][A
+Downloading (…)b-openorca.Q2_K.gguf: 100%|█████████▉| 3.07G/3.08G [00:28<00:00, 115MB/s][ADownloading (…)b-openorca.Q2_K.gguf: 100%|██████████| 3.08G/3.08G [00:28<00:00, 109MB/s]
+Fetching 1 files: 100%|██████████| 1/1 [00:29<00:00, 29.18s/it]Fetching 1 files: 100%|██████████| 1/1 [00:29<00:00, 29.18s/it]
 Traceback (most recent call last):
-  File "/var/lib/condor/execute/dir_2522079/prompt-machine.py", line 74, in <module>
+  File "/var/lib/condor/execute/dir_2526964/prompt-machine.py", line 79, in <module>
     run_prompt_on_model(model_name=model, prompt=prompt,
-  File "/var/lib/condor/execute/dir_2522079/prompt-machine.py", line 25, in run_prompt_on_model
-    tokenizer = AutoTokenizer.from_pretrained(model_name, device_map="cuda")
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: AutoTokenizer.from_pretrained() got an unexpected keyword argument 'device_map'
+  File "/var/lib/condor/execute/dir_2526964/prompt-machine.py", line 23, in run_prompt_on_model
+    tokenizer = ctransformers.AutoTokenizer.from_pretrained(model)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/ctransformers/hub.py", line 268, in from_pretrained
+    return CTransformersTokenizer(model._llm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/ctransformers/transformers.py", line 84, in __init__
+    super().__init__(**kwargs)
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/tokenization_utils.py", line 367, in __init__
+    self._add_tokens(
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/tokenization_utils.py", line 467, in _add_tokens
+    current_vocab = self.get_vocab().copy()
+                    ^^^^^^^^^^^^^^^^
+  File "/home/tobias.kalmbach/.conda/envs/venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1677, in get_vocab
+    raise NotImplementedError()
+NotImplementedError

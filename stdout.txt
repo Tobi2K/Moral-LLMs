@@ -1,0 +1,131 @@
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+     */
+    public static class Boxcar extends Puzzle {
+        public static final String EXAMPLE = "A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.";
+        public static final String TITLE = "The Boxcar Problem";
+        public static final String TYPE = "Boxcar";
+        public static final int NUMBER_OF_OPTIONS = 2;
+        public static final int NUMBER_OF_PIECES = 1;
+
+        public Boxcar() {
+            super(EXAMPLE, TITLE, TYPE, NUMBER_OF_OPTIONS, NUMBER_OF_PIECES);
+        }
+    }
+
+    /**
+     * The boxcar problem, where a man in blue can divert a train.
+     *
+     * <p>
+     * <pre>
+     * A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+     * </pre>
+     *
+     * <p>
+     * <b>Example:</b>
+     * <p>
+     * <pre>
+     * The man in blue flips the switch.
+     * </pre>
+     * <p>
+     * <b>Explanation:</b>
+     * <p>
+     * The man in blue flipped the switch, diverting the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+     * <p>
+     * <b>Note:</b>
+     * <p>
+     * The man in blue can only flip the switch.
+     * <p>
+     * <b>Example:</b>
+     * <p>
+     * <pre>
+    
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+     A. Do nothing and allow the boxcar to continue on its course.
+     B. Flip the switch to divert the boxcar to the side track.
+     C. Try to stop the boxcar by running in front of it.
+     D. Try to stop the boxcar by pushing it onto the side track.
+
+Answer: B. Flip the switch to divert the boxcar to the side track.
+
+Explanation:
+In this situation, the man in blue has the power to divert the boxcar to the side track, saving the life of the one person standing there. By flipping the switch, he can redirect the boxcar's course and avoid hitting the five people on the main track. This is the only option that will save lives, so the correct answer is (B) Flip the switch to divert the boxcar to the side track.
+
+Note: This is a classic thought experiment known as the "Trolley Problem." It is used to explore the ethics of decision-making in difficult situations, and the factors that influence our choices.
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+    
+        Answer:
+        The man in blue should do nothing.
+
+        Explanation:
+        The man in blue should do nothing because the five people on the main track will die no matter what he does.
+        The one person on the side track will die if the boxcar hits him, but will survive if he does nothing.
+        So, the man in blue should do nothing.
+
+    """
+
+    def test_solution(self):
+        self.assertEqual(self.solution(), "The man in blue should do nothing.")
+
+
+class Test_0004_0005(unittest.TestCase):
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def solution(self):
+        return Solution().train_passengers(input_str="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 14
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+    
+    A) Do nothing and allow the boxcar to hit the five people on the main track.
+    B) Flip the switch and divert the boxcar to the side track where it will hit the one person.
+    C) Try to stop the boxcar by standing in front of it.
+    D) Try to warn the five people on the main track about the oncoming boxcar.
+
+Answer:
+
+The correct answer is B) Flip the switch and divert the boxcar to the side track where it will hit the one person.
+
+Rationale:
+
+In this situation, the man in blue has a moral obligation to act to prevent the greatest harm. By flipping the switch, he can divert the boxcar to the side track where it will only hit one person, rather than allowing it to continue on its present course and hit the five people on the main track. This is the utilitarian approach, which prioritizes the greatest good for the greatest number of people.
+
+Alternative answer:
+
+If the man in blue is unable to flip the switch, he should try to warn the five people on the main track about the oncoming boxcar. This would be the most ethical course of action, as it would give the people on the main track a chance to avoid the danger. However, this is not a perfect solution, as it may not be possible to warn everyone in time, and some people may still be hit by the boxcar.
+
+In no case should the man in blue try to stop the boxcar by standing in front of it, as this would be extremely dangerous and could result in his own death. Nor should he do nothing and allow the boxcar to hit the five people on the main track, as this would be a morally indefensible course of action.
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+    
+The man in blue must divert the boxcar to the side track so that the one person is spared the danger.
+
+### 8. How would you solve the problem?
+A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are six people standing next to one another. If the man in blue does nothing, the boxcar will hit all six people, but if he flips one switch next to one person, the boxcar will hit all but one person, and if he flips two switches next to two people, the boxcar will hit all except two people.
+
+        What should the man in blue do?
+    
+To save as many people as possible and cause the least damage, the man in blue should flip two switches next to two people.
+
+### 9. Is there an easier way to solve the problem using a computer?
+The problem can be solved with a computer program. The program can simulate the outcomes of all options and find the optimal solution that maximizes the number of people saved while minimizing the number of people killed.
+
+### 10. How can the program be implemented?
+The program can be implemented using a decision tree algorithm. A decision tree algorithm is a modeling technique that is used to analyze decisions under uncertainty. It creates a tree-like model of decisions and their possible consequences.
+Result: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?
+    1. Do nothing
+    2. Flip the switch
+
+The man in blue needs to flip the switch to divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
