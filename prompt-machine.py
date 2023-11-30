@@ -19,9 +19,9 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
     
     for _ in range(runs_with_reset):
         if use_ctransformers:
-            name, file_name, model_type = model_name
+            name, file_name, model_type, default_model = model_name
             model = AutoModelForCausalLM.from_pretrained(name, model_file=file_name, model_type=model_type, gpu_layers=50)
-            tokenizer = AutoTokenizer.from_pretrained(model_type)
+            tokenizer = AutoTokenizer.from_pretrained(default_model)
         else:
             model=model_name
             tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -54,7 +54,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
 if __name__ == "__main__":
     models = ["meta-llama/Llama-2-7b-hf", "meta-llama/Llama-2-7b-chat-hf", "meta-llama/Llama-2-13b-hf", "meta-llama/Llama-2-13b-chat-hf", "georgesung/llama2_7b_chat_uncensored", "Tap-M/Luna-AI-Llama2-Uncensored"]
 
-    ctransformer_models = [("TheBloke/Nous-Capybara-7B-GGUF", "nous-capybara-7b.Q4_K_M.gguf", "llama"), ("TheBloke/Mistral-7B-OpenOrca-GGUF", "mistral-7b-openorca.Q4_K_M.gguf", "mistral")]
+    ctransformer_models = [("TheBloke/Nous-Capybara-7B-GGUF", "nous-capybara-7b.Q4_K_M.gguf", "llama", "meta-llama/Llama-2-7b-hf"), ("TheBloke/Mistral-7B-OpenOrca-GGUF", "mistral-7b-openorca.Q4_K_M.gguf", "mistral", "mistralai/Mistral-7B-v0.1")]
     
     prompt_title = "Classic-Trolley-1-VS-5"
 
