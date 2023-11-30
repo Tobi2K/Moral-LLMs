@@ -21,7 +21,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
         if use_ctransformers:
             name, file_name, model_type = model_name
             model = AutoModelForCausalLM.from_pretrained(name, model_file=file_name, model_type=model_type, gpu_layers=50)
-            tokenizer = ctransformers.AutoTokenizer.from_pretrained(model_type)
+            tokenizer = AutoTokenizer.from_pretrained(model_type)
         else:
             model=model_name
             tokenizer = AutoTokenizer.from_pretrained(model_name)
