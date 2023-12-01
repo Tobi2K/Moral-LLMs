@@ -28,6 +28,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
         pipeline = transformers.pipeline(
             "text-generation",
             model=model,
+            tokenizer=tokenizer,
             torch_dtype=torch.float16,
             device_map="cuda",
         )
