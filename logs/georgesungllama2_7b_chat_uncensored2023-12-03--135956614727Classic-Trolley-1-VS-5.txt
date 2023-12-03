@@ -1,0 +1,24 @@
+Model: georgesung/llama2_7b_chat_uncensored
+
+Date: 2023-12-03 13:59:57.841230
+
+Prompt: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?[/INST]
+    
+
+Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        What should the man in blue do?[/INST]
+    
+        [INST]A. Flip the switch and save the one person[/INST]
+        [INST]B. Do nothing and let the boxcar continue[/INST]
+        [INST]C. Flip the switch but also hit a switch that will divert the side track[/INST]
+        [INST]D. Flip the switch but also hit a switch that will stop the side track in the middle[/INST]
+        [INST]E. Flip the switch and also run up to the one person and save her by pushing her out of the way.[/INST]
+
+
+
+ 
+
+
