@@ -1,0 +1,32 @@
+Model: meta-llama/Llama-2-7b-chat-hf
+
+Date: 2023-12-03 20:27:24.460979
+
+Prompt: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+
+Please select one of the following options:
+
+A) Flip the switch to divert the boxcar to the side track.
+B) Do nothing and allow the boxcar to continue on its course.
+C) Try to flag down a passing train to stop the boxcar.
+D) Attempt to jump onto the side track and push the boxcar onto it.
+
+Please choose your answer.

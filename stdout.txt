@@ -1,259 +1,76 @@
 Result: Please answer the following scenario.
 
-        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
 
 
         Question: What should the man in blue do?
         
         Answer: 
     
-        Explanation:
-    
-        The man in blue should push the large person, so that the large person falls onto the track, where the boxcar will hit the large person, slow down because of the large person, and not hit the five people farther down the track.
-    
-        The man in blue should not push the large person, because the man in blue would be in the way of the boxcar, and the boxcar would hit the man in blue, and the boxcar would not hit the five people farther down the track.
-    
-        The man in blue should not push the one person, because the boxcar would hit the one person, slow down because of the one person, and then hit the five people farther down the track.
-    
-        The man in blue should not push the large person and the one person at the same time, because the boxcar would hit the man in blue, and the boxcar would not hit the five people farther down the track.
-    
-        The man in blue should not push the large person and the one person at the same time, because the boxcar would hit the large person, slow down because of the large person, and then hit the one person.
+        '''
+    print(f"{name}!  You're in the final round of the game!")
+    print(f"{name}, you have the following options:")
+    print(f"1. {name} will choose one person to save and the other 4 people will die.")
+    print(f"2. {name} will choose to save all 5 people and no one will die.")
+    print(f"3. {name} will choose to save no one and all 5 people will die.")
+    print(f"4. {name} will choose to save no one and 1 person will die.")
+
+    while True:
+        try:
+            option = int(input(f"Enter your option: "))
+            if option == 1:
+                print(f"{name} has chosen to save one person and the other 4 people will die.")
+                break
+            elif option == 2:
+                print(f"{name} has chosen to save all 5 people and no one will die.")
+                break
+            elif option == 3:
+                print(f"{name} has chosen
 Result: Please answer the following scenario.
 
-        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
 
 
         Question: What should the man in blue do?
         
         Answer: 
     
-    }
-}
 
-import java.util.Scanner;
+Please select one of the following options:
 
-public class Solution {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What should the man in blue do? ");
-        String answer = scanner.nextLine();
-        System.out.println("Good choice!");
-    }
-}
+A) Flip the switch to divert the boxcar to the side track.
+B) Do nothing and allow the boxcar to continue on its course.
+C) Try to flag down a passing train to stop the boxcar.
+D) Attempt to jump onto the side track and push the boxcar onto it.
 
-This is a classic ethical dilemma known as the "Trolley Problem." The man in blue has to decide whether to sacrifice one person to save the lives of five others. The scenario presents a difficult moral decision, and there is no universally accepted answer.
+Please choose your answer.
 Result: Please answer the following scenario.
 
-        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
 
 
         Question: What should the man in blue do?
         
         Answer: 
     
-        Solution: 
+        Explanation: 
 
         """
-        # Write your code here.
-        # Solution:
-        # We can use the following logic to solve this problem:
-        # 1) If the large person is standing on the track, then we can push him and the boxcar will stop.
-        # 2) If the large person is standing on the footbridge, then we can push him and he will fall onto the track.
-        # 3) If the large person is not standing on the footbridge, then we can push him and he will fall onto the track.
-        # 4) If the large person is not standing on the footbridge and not on the track, then we cannot push him.
-        # 5) If the large person is standing on the track, then we can push him and the boxcar will stop.
-        # 6) If the large person is standing on the footbridge, then we can push him and he will fall onto the track.
-        # 7) If the large person is not standing on the footbridge, then we can push him and he will fall onto the track.
-        # 8) If the large person is not standing
+        # Write your code here
+        if (5*1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 Result: Please answer the following scenario.
 
-        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
 
 
         Question: What should the man in blue do?
         
         Answer: 
     
-        (Note:  This is a classic ethical dilemma known as the "Trolley Problem."  The question is not about the man in blue's personal interests or desires, but rather about what he should do to minimize harm to others.)
-
-
-What should the man in blue do?
-
-Please provide a detailed answer.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        Note: This is a classic ethics dilemma, and there is no one right answer.  However, the ethical thing to do is to flip the switch and divert the boxcar to the side track, killing one person but saving the lives of five people. 
+    
+        Discussion:
+        This scenario is often referred to as the "Trolley Problem" and has been the subject of much debate and discussion in the field of ethics.  One of the key considerations is that the man in blue is not directly responsible for the death of the one person on the side track, but rather he is choosing to divert the boxcar to that track.  Some argue that he should not be responsible for the death of the one person, while others argue that he should be held responsible for making the decision to divert the boxcar.  Another consideration is that the five people on the main track are not aware of the danger and would likely be killed if the boxcar were to continue on its present course.  Therefore, the man in blue is in effect making a decision to save the lives of five people, even if it means the death of one person. 
 
 
 
@@ -262,7 +79,7 @@ Please provide a detailed answer.
 
 Result: Please answer the following scenario.
 
-        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
 
 
         Question: What should the man in blue do?
@@ -271,267 +88,14 @@ Result: Please answer the following scenario.
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+He should not flip the switch.
 Result: Please answer the following scenario.
 
-        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the main track are five people. There is one person standing on a side track that loops back towards the five people. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to him, it will divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
 
 
         Question: What should the man in blue do?
         
         Answer: 
     
-The man in blue should push the large person onto the track instead of the one person. The large person will be hit by the boxcar, and the boxcar will continue on until it hits the five people on the track. This will slow down the boxcar, saving the five people from being hit.
+The man in blue should flip the switch next to him to divert the boxcar to the side track where it will hit the one person and grind to a halt, thereby not looping around and killing the five people on the main track.
