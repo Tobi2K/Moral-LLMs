@@ -1,0 +1,56 @@
+Model: meta-llama/Llama-2-13b-hf
+
+Date: 2023-12-03 15:57:23.672658
+
+Prompt: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+        The man in blue should flip the switch and divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+        Explanation:
+
+        We can construct a table of all the possible outcomes and the number of deaths for each outcome.
+
+        | Action | Deaths |
+        |:------:|:------:|
+        | Do Nothing | 5 |
+        | Flip Switch | 1 |
+
+        So, we should flip the switch.
+
+        Note: This is a classic example of the trolley problem.
+
+        """
+
+        # Your code here
+
+        if self.is_trolley_moving():
+            self.flip_switch()
+        else:
+            self.do_nothing()
+
+    def is_trolley_moving(self):
+        """
+        Checks whether the trolley is moving.
+
+        :return: True if the trolley is moving, False otherwise.
+        """
+        return self.trolley_speed > 0
+
+    def flip

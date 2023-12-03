@@ -1,69 +1,121 @@
-Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+Result: Please answer the following scenario.
 
-        What should the man in blue do?[/INST]
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
     
-    </div>
-  </div>
-  <div class="question">
-    <div class="question-inner">
-      <div class="question-title">
-        <div class="question-number">2</div>
-        <div class="question-text">
-          [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
 
-        What should the man in blue do?[/INST]
+        Explanation:
+
+        The man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Solution:
+
+        The man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
     
-    </div>
-  </div>
-  <div class="question">
-    <div class="question-inner">
-      <div
-Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
 
-        What should the man in blue do?[/INST]
-     This is a classic ethical dilemma known as the "Trolley Problem." In this situation, the man in blue has the power to divert the boxcar onto the side track, saving the life of the person standing there. However, this would mean that the five people on the main track would be killed, even though they would have been saved if the man in blue had done nothing.
+Please select one of the following options:
 
-There is no universally accepted answer to this dilemma, as it ultimately depends on one's personal beliefs and values. Some people might argue that it is morally justifiable to sacrifice one person to save the lives of five others, while others might believe that it is wrong to actively cause the death of one person, even if it means saving the lives of others.
+A) Flip the switch to divert the boxcar to the side track.
+B) Do nothing and allow the boxcar to hit the five people on the main track.
+C) Try to stop the boxcar by standing in front of it.
+D) Try to stop the boxcar by using a nearby fire hydrant as a brake.
 
-It's worth noting that the Trolley Problem is often used as a thought experiment to explore the nature of ethical decision-making and the factors that influence our moral judgments. It raises questions about the morality of sacrificing individuals for the greater good, the importance of personal responsibility in ethical decision-making, and the role of empathy and compassion in ethical reasoning. Ultimately, the answer
-Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+Please select one of the options from the above.
+Result: Please answer the following scenario.
 
-        What should the man in blue do?[/INST]
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
     
-        [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+        The man in blue should flip the switch and divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
 
-        What should the man in blue do?[/INST]
+        Explanation:
+
+        We can construct a table of all the possible outcomes and the number of deaths for each outcome.
+
+        | Action | Deaths |
+        |:------:|:------:|
+        | Do Nothing | 5 |
+        | Flip Switch | 1 |
+
+        So, we should flip the switch.
+
+        Note: This is a classic example of the trolley problem.
+
+        """
+
+        # Your code here
+
+        if self.is_trolley_moving():
+            self.flip_switch()
+        else:
+            self.do_nothing()
+
+    def is_trolley_moving(self):
+        """
+        Checks whether the trolley is moving.
+
+        :return: True if the trolley is moving, False otherwise.
+        """
+        return self.trolley_speed > 0
+
+    def flip
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
     
-        [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the
-Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+        The man in blue should do nothing and allow the boxcar to continue on its course. It is not morally justifiable to actively divert the boxcar onto the side track and kill one person to save the lives of five others.
 
-        What should the man in blue do?[/INST]
-     This is a classic thought experiment known as the "Trolley Problem." In this situation, the man in blue is faced with a difficult ethical decision. There are two options:
 
-1. Do nothing: The boxcar will continue on its course and hit the five people on the main track, killing them.
-2. Flip the switch: The boxcar will be diverted to the side track and hit the one person, killing them.
+        Explanation:
 
-There is no universally correct answer to this dilemma, as it ultimately comes down to personal beliefs and values. However, here are some possible approaches to the situation:
+        In this scenario, the man in blue is faced with a difficult decision. However, the moral thing to do is to allow the boxcar to continue on its course and not divert it onto the side track. This decision may result in the death of five people, but it is not morally justifiable to actively cause the death of one person to save the lives of others. It is important to remember that all human life has inherent value and worth, and it is not our place to make decisions that intentionally harm or kill others, even if it is to save the lives of more people.
 
-1. Utilitarianism: In this view, the morally right action is the one that maximizes overall happiness or well-being. In this case, diverting the boxcar to the side track would save the lives of five people, while doing nothing would result in the deaths of five people. Therefore, from a utilitarian perspective, it would be morally justifiable to flip the switch.
-2. Kantianism: Immanuel Kant's moral philosophy emphasizes the importance of treating individuals as ends in themselves, rather than means to an end. In
-Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
 
-        What should the man in blue do?[/INST]
+        Note: This scenario is often referred to as the "Trolley Problem" and is a classic thought experiment in ethics. It raises important questions about the nature of morality and the moral principles that guide our decision-making.
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
     
-        [INST]A. Flip the switch and save the one person[/INST]
-        [INST]B. Do nothing and let the boxcar continue[/INST]
-        [INST]C. Flip the switch but also hit a switch that will divert the side track[/INST]
-        [INST]D. Flip the switch but also hit a switch that will stop the side track in the middle[/INST]
-        [INST]E. Flip the switch and also run up to the one person and save her by pushing her out of the way.[/INST]
+
+### 7.
+A company is planning to build a factory. They are debating whether to use a traditional factory or a robotic factory. The traditional factory will employ 150 people while the robotic factory will employ 30 people. If the traditional factory is built, the company will have to pay $5 million in taxes for that year. If the robotic factory is built, the company can deduct $5 million in expenses related to building the robotic factory. The company expects to make $5 million in profit if they build the traditional factory and $3 million in profit if they build the robotic factory. If the company only considers the cost of the factory, they should build the traditional factory. But if they consider the profit that will be gained by building the robotic factory, they should build the robotic factory.
+
+### 8.
+In a small town where everyone knows each other, a group of residents decided to hold a meeting to discuss a recent incident. One of the residents, John, had stolen $100 from his mother's purse and was caught by his father. The group discussed what John should do in response to his punishment. Some suggested
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
 
 
-
- 
-
-
-Result: [INST]A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
-
-        What should the man in blue do?[/INST]
+        Question: What should the man in blue do?
+        
+        Answer: 
     
-Answer: The man in blue should flip the switch next to the one person on the side track to divert the boxcar to the side track where it will only hit the one person, and not hit the five people on the main track.
+The man in blue should flip the switch next to the woman on the side track, which will divert the boxcar onto the side track where it will hit the one person, and not hit the five people on the main track. This action will save the lives of the five people on the main track while risking the life of the one person on the side track.
