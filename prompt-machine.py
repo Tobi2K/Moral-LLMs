@@ -20,8 +20,8 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
     for _ in range(runs_with_reset):
         if use_ctransformers:
             name, file_name, model_type, default_model = model_name
-            model = AutoModelForCausalLM.from_pretrained(name, model_file=file_name, model_type=model_type, gpu_layers=50)
-            tokenizer = AutoTokenizer.from_pretrained(default_model)
+            model = AutoModelForCausalLM.from_pretrained(name, hf=True, gpu_layers=50)
+            tokenizer = ctransformers.AutoTokenizer.from_pretrained(model)
         else:
             model=model_name
             tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -29,8 +29,6 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
             "text-generation",
             model=model,
             tokenizer=tokenizer,
-            torch_dtype=torch.float16,
-            device_map="cuda",
         )
         sequences = pipeline(
             prompt,
@@ -38,7 +36,7 @@ def run_prompt_on_model(model_name, prompt, prompt_title="", with_context=False,
             top_k=10,
             num_return_sequences=1,
             eos_token_id=tokenizer.eos_token_id,
-            max_length=800,
+            max_new_tokens=256,
         )
         for _ in range(runs_with_context):
             cur_date = str(datetime.datetime.now()).replace(
