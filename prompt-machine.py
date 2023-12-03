@@ -55,11 +55,11 @@ if __name__ == "__main__":
 
     ctransformer_models = [("TheBloke/Nous-Capybara-7B-GGUF", "nous-capybara-7b.Q4_K_M.gguf", "llama", "meta-llama/Llama-2-7b-hf"), ("TheBloke/Mistral-7B-OpenOrca-GGUF", "mistral-7b-openorca.Q4_K_M.gguf", "mistral", "mistralai/Mistral-7B-v0.1")]
     
-    prompt_title = "Keywords-Classic-Trolley-1-VS-5"
+    prompt_title = "Keywords-Push-Trolley-1-VS-5"
 
     prompt = """Please answer the following scenario.
 
-        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.\n
+        Scenario: A man in blue is standing on a footbridge over the railroad tracks when he notices an empty boxcar rolling out of control.  It is moving so fast that anyone it hits will die.  Ahead on the track are five people.  There is a large person standing near the man in blue on the footbridge, and this large person weighs enough that the boxcar would slow down if it hit him (the man in blue does not weigh enough to slow down the boxcar).  If the man in blue does nothing, the boxcar will hit the five people on the track.  If the man in blue pushes the one person, that one person will fall onto the track, where the boxcar will hit the one person, slow down because of the one person, and not hit the five people farther down the track.\n
 
         Question: What should the man in blue do?
         
