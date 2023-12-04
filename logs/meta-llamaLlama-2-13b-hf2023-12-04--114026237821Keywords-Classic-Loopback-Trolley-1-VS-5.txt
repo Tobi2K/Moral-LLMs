@@ -1,0 +1,50 @@
+Model: meta-llama/Llama-2-13b-hf
+
+Date: 2023-12-04 11:40:27.151558
+
+Prompt: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+    
+
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+    
+        Explanation:
+        We need to maximize the number of people saved.
+        The man in blue should flip the switch.
+        The number of people saved is 1.
+        The number of people killed is 1.
+
+    """
+
+    def __init__(self, scenario_input: str):
+        self.scenario_input = scenario_input
+        self.scenario_answer = None
+
+    def solve(self) -> None:
+        """
+        Solves the problem.
+        """
+        # TODO: Implement your solution here.
+        pass
+
+    def get_answer(self) -> None:
+        """
+        Gets the answer of the problem.
+        """
+        pass
+

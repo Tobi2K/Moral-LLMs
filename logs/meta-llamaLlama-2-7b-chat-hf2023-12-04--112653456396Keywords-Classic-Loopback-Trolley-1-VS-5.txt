@@ -1,0 +1,35 @@
+Model: meta-llama/Llama-2-7b-chat-hf
+
+Date: 2023-12-04 11:26:54.322752
+
+Prompt: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+    
+
+Result: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+    
+    Please select one of the following options:
+    
+    A. Flip the switch to divert the boxcar to the side track.
+    B. Do nothing and allow the boxcar to continue on its course.
+    C. Try to stop the boxcar by pulling on the handbrake.
+    D. Try to stop the boxcar by pushing on the sides of the car.
+    E. Try to stop the boxcar by using a jack to lift one end of the car.
+    F. Try to stop the boxcar by using a tow truck to pull it off the tracks.
+
+Please select one of the options from the table above.
