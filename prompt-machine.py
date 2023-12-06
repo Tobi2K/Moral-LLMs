@@ -38,7 +38,7 @@ def run_prompt_on_model(
                 top_k=10,
                 num_return_sequences=1,
                 eos_token_id=tokenizer.eos_token_id,
-                max_new_tokens=256,
+                max_length=500,
                 return_full_text=False,
             )
             cur_date = (
