@@ -1,10 +1,8 @@
-from transformers import AutoTokenizer
-from ctransformers import AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import transformers
-import ctransformers
-import torch
 import datetime
 import json
+import os
 
 
 def run_prompt_on_model(
@@ -13,7 +11,6 @@ def run_prompt_on_model(
     prompt_title="",
     with_context=False,
     reruns=1,
-    use_ctransformers=False,
 ):
     # if with_context is set, do not reset model between repetitions
     if with_context:
@@ -25,39 +22,35 @@ def run_prompt_on_model(
         runs_with_reset = reruns
 
     for _ in range(runs_with_reset):
-        if use_ctransformers:
-            name, file_name, model_type, default_model = model_name
-            model = AutoModelForCausalLM.from_pretrained(name, hf=True, gpu_layers=50)
-            tokenizer = ctransformers.AutoTokenizer.from_pretrained(model)
-        else:
-            model = model_name
-            tokenizer = AutoTokenizer.from_pretrained(model_name)
+        model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+        tokenizer = AutoTokenizer.from_pretrained(model_name, add_eos_token=True)
         pipeline = transformers.pipeline(
             "text-generation",
             model=model,
             tokenizer=tokenizer,
-        )
-        sequences = pipeline(
-            prompt,
-            do_sample=True,
-            top_k=10,
-            num_return_sequences=1,
-            eos_token_id=tokenizer.eos_token_id,
-            max_new_tokens=256,
+            trust_remote_code=True,
+            device_map="auto",
         )
         for _ in range(runs_with_context):
+            sequences = pipeline(
+                prompt,
+                do_sample=True,
+                top_k=10,
+                num_return_sequences=1,
+                eos_token_id=tokenizer.eos_token_id,
+                max_new_tokens=256,
+                return_full_text=False,
+            )
             cur_date = (
                 str(datetime.datetime.now())
                 .replace(" ", "--")
                 .replace(":", "")
                 .replace(".", "")
             )
+            filename = "/home/tobias.kalmbach/LangChain/logs/" + model_name.replace("/", "")        + "/"        + model_name.split("/")[1] + cur_date + prompt_title        + ".txt",
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
             with open(
-                "/home/tobias.kalmbach/Moral-LLMs/logs/"
-                + model_name.replace("/", "")
-                + cur_date
-                + prompt_title
-                + ".txt",
+                filename,
                 "w",
             ) as f:
                 for seq in sequences:
@@ -70,27 +63,10 @@ def run_prompt_on_model(
 
 if __name__ == "__main__":
     models = [
-        "meta-llama/Llama-2-7b-hf",
         "meta-llama/Llama-2-7b-chat-hf",
-        "meta-llama/Llama-2-13b-hf",
         "meta-llama/Llama-2-13b-chat-hf",
         "georgesung/llama2_7b_chat_uncensored",
         "Tap-M/Luna-AI-Llama2-Uncensored",
-    ]
-
-    ctransformer_models = [
-        (
-            "TheBloke/Nous-Capybara-7B-GGUF",
-            "nous-capybara-7b.Q4_K_M.gguf",
-            "llama",
-            "meta-llama/Llama-2-7b-hf",
-        ),
-        (
-            "TheBloke/Mistral-7B-OpenOrca-GGUF",
-            "mistral-7b-openorca.Q4_K_M.gguf",
-            "mistral",
-            "mistralai/Mistral-7B-v0.1",
-        ),
     ]
 
     prompt_title = "Keywords-Classic-Loopback-Trolley-1-VS-5"
@@ -110,7 +86,3 @@ if __name__ == "__main__":
 
     for model in models:
         run_prompt_on_model(model_name=model, prompt=prompt, prompt_title=prompt_title, reruns=5)
-
-    # for model in ctransformer_models:
-    #     run_prompt_on_model(model_name=model, prompt=prompt,
-    #                         prompt_title=prompt_title, use_ctransformers=True)
