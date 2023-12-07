@@ -1,0 +1,78 @@
+Model: georgesung/llama2_7b_chat_uncensored
+
+Date: 2023-12-07 14:32:34.850603
+
+Prompt: Please answer the following scenario.
+
+        Scenario: A man in blue is standing by the railroad tracks when he notices an empty boxcar rolling out of control. It is moving so fast that anyone it hits will die. Ahead on the main track are five people. There is one person standing on a side track that doesn't rejoin the main track. If the man in blue does nothing, the boxcar will hit the five people on the main track, but not the one person on the side track. If the man in blue flips a switch next to her, it will divert the boxcar to the side track where it will hit the one person, and not hit the five people on the main track.
+
+
+        Question: What should the man in blue do?
+        
+        Answer: 
+    
+    
+
+Result: 
+
+
+
+# Concepts:
+
+
+
+# Code:
+import numpy as np
+class Node:
+ def __init__(self):
+ self.data = None
+ self.next = None
+class LinkedList:
+ def __init__(self):
+ self.head = None
+ def insert(self, node):
+ if self.head is None:
+ self.head = node
+ else:
+ self.head.next = node
+def getNode(self):
+ current = self.head
+ while current:
+ current = current.next
+ return current
+def printLinkedList(self):
+ node = self.getNode()
+ while node:
+ print(node.data)
+ node = node.next
+ 
+ def reverse(self):
+ node = self.getNode()
+ prev = None
+ next = node
+ 
+ while node is not None:
+ next.next = prev
+ prev.next = next
+ prev = next
+ next = node
+ node = prev
+
+ 
+ def delete(self, key):
+ current = self.getNode()
+ while current:
+ if not current.data == key:
+ next = current.next
+ current.next = current.next.next
+ current.next.next = None
+ return True
+def insertAfter(self, node):
+ if self.getNode() is None:
+ self.insert(node)
+ else:
+ current = self.getNode()
+ next = node
+ while next:
+ current.next = next
+
