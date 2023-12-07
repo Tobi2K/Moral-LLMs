@@ -47,7 +47,7 @@ def run_prompt_on_model(
                 .replace(":", "")
                 .replace(".", "")
             )
-            filename = "/home/tobias.kalmbach/LangChain/logs/" + model_name.replace("/", "")        + "/"        + model_name.split("/")[1] + cur_date + prompt_title        + ".txt",
+            filename = "/home/tobias.kalmbach/LangChain/logs/" + model_name.replace("/", "")        + "/"        + model_name.split("/")[1] + cur_date + prompt_title        + ".txt"
             os.makedirs(os.path.dirname(filename), exist_ok=True)
             with open(
                 filename,
