@@ -8,7 +8,10 @@ import pandas as pd
 
 PROMPT_TITLE = "OUS-7-point-likert-scale-No-Explanation"
 
-PROMPT = """Statement: {} Please answer using one of the options below:
+PROMPT = """Do you agree with the following statement?
+
+Statement: {} 
+Please answer using the following scale:
 1 - Strongly Disagree
 2 - Disagree
 3 - Somewhat Disagree
@@ -17,7 +20,7 @@ PROMPT = """Statement: {} Please answer using one of the options below:
 6 - Agree
 7 - Strongly Agree
 
-Do not give an explanation. Only respond with the number of the option you choose.
+Do you agree with the statement above? Do not give an explanation. Only respond with the number of the option you choose.
 """
 
 FILENAME = "questions.csv"
