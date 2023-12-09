@@ -1,0 +1,16 @@
+executable              = /bin/bash
+arguments               = -i activate.sh venv questionnaire.py 
+log                     = default.log
+transfer_input_files    = activate.sh, questionnaire.py, prompt.json, questions.csv
+output                  = stdout.txt
+error                   = stderr.txt
+should_transfer_files   = IF_NEEDED
+request_memory          = 25 GB
+request_cpus            = 4
+request_gpus            = 2
+requirements            = (TARGET.MACHINE == "pascal-node01.l3s.intra") 
+notification            = Always
+notify_user             = tobias.kalmbach@stud.uni-hannover.de
+stream_output           = True
+stream_error            = True
+queue
