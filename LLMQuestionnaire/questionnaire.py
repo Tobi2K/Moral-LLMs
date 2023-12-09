@@ -97,7 +97,7 @@ def run_prompt_on_model(
             .replace(":", "")
             .replace(".", "")
         )
-        filename = "./logs/" + model_name.replace("/", "")        + "/"        + model_name.replace("/", "") + cur_date + prompt_title        + ".csv"
+        filename = "/home/tobias.kalmbach/Moral-LLMs/LLMQuestionnaire/logs/" + model_name.replace("/", "")        + "/"        + model_name.replace("/", "") + cur_date + prompt_title        + ".csv"
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         df.to_csv(filename, index=False, encoding='utf-8')
         print(datetime.now().time(), "\t", "Wrote csv\n\n\n")
