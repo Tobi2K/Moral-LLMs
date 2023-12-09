@@ -111,8 +111,6 @@ if __name__ == "__main__":
         "Tap-M/Luna-AI-Llama2-Uncensored",
     ]
     
-    models = ["distilgpt2"]
-    
     with open("prompt.json", "r+") as file:
         # First we load existing data into a dict.
         file_data = json.load(file)
