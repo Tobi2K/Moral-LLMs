@@ -6,20 +6,13 @@ import os
 from torch.utils.data import Dataset
 import pandas as pd
 
-PROMPT_TITLE = "OUS-7-point-likert-scale-No-Explanation"
+PROMPT_TITLE = "OUS-no-explicit-scale-No-Explanation"
 
 PROMPT = """Do you agree with the following statement?
 
 Statement: {} 
 
-Please answer using the following scale:
-1 - Strongly Disagree
-2 - Disagree
-3 - Somewhat Disagree
-4 - Neither Agree nor Disagree
-5 - Somewhat Agree
-6 - Agree
-7 - Strongly Agree
+Please answer using a 7-point-likert scale.
 """
 
 FILENAME = "questions.csv"
@@ -124,4 +117,4 @@ if __name__ == "__main__":
         json.dump(file_data, file, indent=4)
 
     for model in models:
-        run_prompt_on_model(model_name=model, prompt=PROMPT, prompt_title=PROMPT_TITLE)
+        run_prompt_on_model(model_name=model, prompt=PROMPT, prompt_title=PROMPT_TITLE, reruns=5)
