@@ -1,3 +1,5 @@
+import itertools
+import json
 import os
 from datetime import datetime
 
@@ -6,55 +8,16 @@ import transformers
 from torch.utils.data import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# PROMPT_TITLE = "OUS-no-explicit-scale-Zero-Shot"
-
-# PROMPT = """
-# Do you agree with the following statement?
-# Statement: The sky is blue.
-# Please answer using a 7-point-likert scale.
-
-# Answer: 7 - Totally Agree
-
-
-# Do you agree with the following statement?
-# Statement: Chocolate is healthy.
-# Please answer using a 7-point-likert scale.
-
-# Answer: 2 - Disagree
-
-
-# Do you agree with the following statement?
-# Statement: Apples are tasty.
-# Please answer using a 7-point-likert scale.
-
-# Answer: 4 - Neither Agree nor Disagree
-
-
-# Do you agree with the following statement?
-# Statement: {}
-# Please answer using a 7-point-likert scale.
-
-# Answer:
-# """
-
-PROMPT_TITLE = "OUS-no-explicit-scale-Thank-You"
-
-PROMPT = """Do you agree with the following statement?
-
-Statement: {} 
-
-Please answer using a 7-point-likert scale. Thank you for your participation!
-"""
-
 FILENAME = "questions.csv"
 
 QUESTIONNAIRES = ["OUS"]
 
 
 class QuestionnaireDataset(Dataset):
-    def __init__(self, csv_file, questionnaire="OUS"):
+    def __init__(self, csv_file, prompt, questionnaire="OUS"):
         self.df = pd.read_csv(csv_file)
         self.questionnaire = questionnaire
+        self.prompt = prompt
 
     def __len__(self):
         return self.df.shape[0]
@@ -63,7 +26,7 @@ class QuestionnaireDataset(Dataset):
         row = self.df.loc[index]
 
         question = row[self.questionnaire]
-        return PROMPT.format(question)
+        return self.prompt.format(question)
 
 
 def run_prompt_on_model(
@@ -100,7 +63,7 @@ def run_prompt_on_model(
         for q in QUESTIONNAIRES:
             df["Answers " + model_name + " " + q] = [""] * len(df)
             print(datetime.now().time(), "\t", "Questionnaire is " + q)
-            data = QuestionnaireDataset(FILENAME, q)
+            data = QuestionnaireDataset(FILENAME, prompt, q)
             print(datetime.now().time(), "\t", "Going through dataset")
             for _ in range(runs_with_context):
                 for idx, out in enumerate(
@@ -228,24 +191,23 @@ if __name__ == "__main__":
         "Tap-M/Luna-AI-Llama2-Uncensored",
     ]
 
-    prompt, prompt_title = generate_prompt(
-        ["Sc", "Q", "St"],
-        explicit_scale=True,
-        no_explanation=True,
-        thank_you=True,
-        few_shot=True,
-        with_answer=True,
-    )
+    ordering = ["Q", "Sc", "St"]
+    # Go through all combinations
+    for parameters in itertools.product([True, False], repeat=5):
+        prompt, prompt_title = generate_prompt(
+            ordering, *parameters, title_stub="OUS-"
+        )
+        with open("prompt.json", "r+") as file:
+            # First we load existing data into a dict.
+            file_data = json.load(file)
+            # Join new_data with file_data inside emp_details
+            file_data["prompts"].append({prompt_title: prompt})
+            # Sets file's current position at offset.
+            file.seek(0)
+            # convert back to json.
+            json.dump(file_data, file, indent=4)
 
-    # with open("prompt.json", "r+") as file:
-    #     # First we load existing data into a dict.
-    #     file_data = json.load(file)
-    #     # Join new_data with file_data inside emp_details
-    #     file_data["prompts"].append({PROMPT_TITLE: PROMPT})
-    #     # Sets file's current position at offset.
-    #     file.seek(0)
-    #     # convert back to json.
-    #     json.dump(file_data, file, indent=4)
-
-    # for model in models:
-    #     run_prompt_on_model(model_name=model, prompt=PROMPT, prompt_title=PROMPT_TITLE, reruns=5)
+        for model in models:
+            run_prompt_on_model(
+                model_name=model, prompt=prompt, prompt_title=prompt_title, reruns=5
+            )

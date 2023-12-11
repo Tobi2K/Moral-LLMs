@@ -5,8 +5,8 @@ transfer_input_files    = activate.sh, questionnaire.py, prompt.json, questions.
 output                  = stdout.txt
 error                   = stderr.txt
 should_transfer_files   = IF_NEEDED
-request_memory          = 25 GB
-request_cpus            = 4
+request_memory          = 100 GB
+request_cpus            = 8
 request_gpus            = 2
 requirements            = (TARGET.MACHINE == "pascal-node01.l3s.intra") 
 stream_output           = True
