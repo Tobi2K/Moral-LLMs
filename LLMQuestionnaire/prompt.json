@@ -11,6 +11,9 @@
         },
         {
             "OUS-7-point-likert-scale-No-Explanation": "Do you agree with the following statement?\n\nStatement: {} \n\nPlease answer using the following scale:\n1 - Strongly Disagree\n2 - Disagree\n3 - Somewhat Disagree\n4 - Neither Agree nor Disagree\n5 - Somewhat Agree\n6 - Agree\n7 - Strongly Agree\n"
+        },
+        {
+            "OUS-no-explicit-scale-No-Explanation": "Do you agree with the following statement?\n\nStatement: {} \n\nPlease answer using a 7-point-likert scale.\n"
         }
     ]
 }
