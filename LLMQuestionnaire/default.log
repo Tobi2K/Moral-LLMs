@@ -313,3 +313,60 @@
 
 	Job terminated of its own accord at 2023-12-11T21:55:52Z with exit-code 0.
 ...
+000 (12542.000.000) 2023-12-11 22:58:42 Job submitted from host: <10.10.1.131:9618?addrs=10.10.1.131-9618&alias=pascal-condor01.l3s.intra&noUDP&sock=schedd_837_b0dc>
+...
+040 (12542.000.000) 2023-12-11 22:58:48 Started transferring input files
+	Transferring to host: <10.10.1.151:9618?addrs=10.10.1.151-9618&alias=pascal-node01.l3s.intra&noUDP&sock=slot1_4_2141_4730_3247>
+...
+007 (12542.000.000) 2023-12-11 22:58:48 Shadow exception!
+	Error from slot1_4@pascal-node01.l3s.intra: SHADOW at 10.10.1.131 failed to send file(s) to <10.10.1.151:37351>: |Error: reading from file /home/tobias.kalmbach/Moral-LLMs/LLMQuestionnaire/questions.csv send_noti.py: (errno 2) No such file or directory; STARTER failed to receive file(s) from <10.10.1.131:9618>
+	0  -  Run Bytes Sent By Job
+	1243052  -  Run Bytes Received By Job
+...
+012 (12542.000.000) 2023-12-11 22:58:48 Job was held.
+	Transfer input files failure at access point pascal-condor01 while sending files to execution point slot1_4@pascal-node01.l3s.intra. Details: reading from file /home/tobias.kalmbach/Moral-LLMs/LLMQuestionnaire/questions.csv send_noti.py: (errno 2) No such file or directory
+	Code 13 Subcode 2
+...
+009 (12542.000.000) 2023-12-11 23:00:04 Job was aborted.
+	via condor_rm (by user tobias.kalmbach)
+...
+000 (12543.000.000) 2023-12-11 23:00:30 Job submitted from host: <10.10.1.131:9618?addrs=10.10.1.131-9618&alias=pascal-condor01.l3s.intra&noUDP&sock=schedd_837_b0dc>
+...
+040 (12543.000.000) 2023-12-11 23:00:30 Started transferring input files
+	Transferring to host: <10.10.1.151:9618?addrs=10.10.1.151-9618&alias=pascal-node01.l3s.intra&noUDP&sock=slot1_4_2141_4730_3248>
+...
+040 (12543.000.000) 2023-12-11 23:00:31 Finished transferring input files
+...
+001 (12543.000.000) 2023-12-11 23:00:32 Job executing on host: <10.10.1.151:9618?addrs=10.10.1.151-9618&alias=pascal-node01.l3s.intra&noUDP&sock=startd_1886_37b4>
+...
+006 (12543.000.000) 2023-12-11 23:00:40 Image size of job updated: 5344
+	5  -  MemoryUsage of job (MB)
+	4300  -  ResidentSetSize of job (KB)
+...
+006 (12543.000.000) 2023-12-11 23:05:40 Image size of job updated: 439180
+	91  -  MemoryUsage of job (MB)
+	92536  -  ResidentSetSize of job (KB)
+...
+006 (12543.000.000) 2023-12-11 23:10:41 Image size of job updated: 477304
+	123  -  MemoryUsage of job (MB)
+	125124  -  ResidentSetSize of job (KB)
+...
+006 (12543.000.000) 2023-12-11 23:13:57 Image size of job updated: 488180
+	123  -  MemoryUsage of job (MB)
+	125124  -  ResidentSetSize of job (KB)
+...
+004 (12543.000.000) 2023-12-11 23:13:57 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	1244637  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     0.01        8         8 
+	   Disk (KB)            :  1233        1250    211614 
+	   Gpus (Average)       :                 2         2 "CUDA8,CUDA12"
+	   Memory (MB)          :   123      102400    102400 
+...
+009 (12543.000.000) 2023-12-11 23:13:57 Job was aborted.
+	via condor_rm (by user tobias.kalmbach)
+...
