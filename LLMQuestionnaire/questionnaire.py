@@ -1,23 +1,55 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import transformers
-from datetime import datetime
-import json
 import os
-from torch.utils.data import Dataset
-import pandas as pd
+from datetime import datetime
 
-PROMPT_TITLE = "OUS-no-explicit-scale-No-Explanation"
+import pandas as pd
+import transformers
+from torch.utils.data import Dataset
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# PROMPT_TITLE = "OUS-no-explicit-scale-Zero-Shot"
+
+# PROMPT = """
+# Do you agree with the following statement?
+# Statement: The sky is blue.
+# Please answer using a 7-point-likert scale.
+
+# Answer: 7 - Totally Agree
+
+
+# Do you agree with the following statement?
+# Statement: Chocolate is healthy.
+# Please answer using a 7-point-likert scale.
+
+# Answer: 2 - Disagree
+
+
+# Do you agree with the following statement?
+# Statement: Apples are tasty.
+# Please answer using a 7-point-likert scale.
+
+# Answer: 4 - Neither Agree nor Disagree
+
+
+# Do you agree with the following statement?
+# Statement: {}
+# Please answer using a 7-point-likert scale.
+
+# Answer:
+# """
+
+PROMPT_TITLE = "OUS-no-explicit-scale-Thank-You"
 
 PROMPT = """Do you agree with the following statement?
 
 Statement: {} 
 
-Please answer using a 7-point-likert scale.
+Please answer using a 7-point-likert scale. Thank you for your participation!
 """
 
 FILENAME = "questions.csv"
 
 QUESTIONNAIRES = ["OUS"]
+
 
 class QuestionnaireDataset(Dataset):
     def __init__(self, csv_file, questionnaire="OUS"):
@@ -32,7 +64,6 @@ class QuestionnaireDataset(Dataset):
 
         question = row[self.questionnaire]
         return PROMPT.format(question)
-
 
 
 def run_prompt_on_model(
@@ -76,26 +107,117 @@ def run_prompt_on_model(
                     generator(
                         data,
                         num_return_sequences=1,
-                        max_new_tokens=50,
+                        max_new_tokens=150,
                         return_full_text=False,
                         pad_token_id=generator.tokenizer.eos_token_id,
                     )
                 ):
                     out = out[0]["generated_text"].replace(",", "").replace("\n", " ")
-                    
+
                     # Set value at row idx, column '"Answers " + model_name + " " + q'
                     df.at[idx, "Answers " + model_name + " " + q] = out
         print(datetime.now().time(), "\t", "Done")
         cur_date = (
-            str(datetime.now())
-            .replace(" ", "--")
-            .replace(":", "")
-            .replace(".", "")
+            str(datetime.now()).replace(" ", "--").replace(":", "").replace(".", "")
         )
-        filename = "/home/tobias.kalmbach/Moral-LLMs/LLMQuestionnaire/logs/" + model_name.replace("/", "")        + "/"        + model_name.replace("/", "") + cur_date + prompt_title        + ".csv"
+        filename = (
+            "/home/tobias.kalmbach/Moral-LLMs/LLMQuestionnaire/logs/"
+            + model_name.replace("/", "")
+            + "/"
+            + prompt_title
+            + cur_date
+            + +".csv"
+        )
         os.makedirs(os.path.dirname(filename), exist_ok=True)
-        df.to_csv(filename, index=False, encoding='utf-8')
+        df.to_csv(filename, index=False, encoding="utf-8")
         print(datetime.now().time(), "\t", "Wrote csv\n\n\n")
+
+
+def generate_prompt(
+    order,
+    explicit_scale=False,
+    no_explanation=False,
+    thank_you=False,
+    few_shot=False,
+    with_answer=False,
+    title_stub="",
+):
+    prompt_title = title_stub + "".join(order)
+    scale = ""
+    question = "Do you agree with the statement?"
+    statement = "Statement: {}\n"
+
+    prompt = ""
+
+    if explicit_scale:
+        prompt_title += "-ExplicitScale"
+        scale = """Please answer using the following scale:\n1 - Strongly Disagree\n2 - Disagree\n3 - Somewhat Disagree\n4 - Neither Agree nor Disagree\n5 - Somewhat Agree\n6 - Agree\n7 - Strongly Agree\n"""
+    else:
+        prompt_title += "-NoScale"
+        scale = "Please answer using a 7-point-likert scale.\n"
+
+    if no_explanation:
+        prompt_title += "-Explanation"
+        question += " Do not give an explanation. Respond only with the number of the option you choose.\n"
+    else:
+        prompt_title += "-NoExplanation"
+        question += "\n"
+
+    fs_statements = [
+        "Statement: The sky is blue.\n",
+        "Statement: Chocolate is healthy.\n",
+        "Statement: Apples are tasty.\n",
+    ]
+    if with_answer:
+        fs_answers = [
+            "\nAnswer: 7 - Totally Agree\n\n\n",
+            "\nAnswer: 2 - Disagree\n\n\n",
+            "\nAnswer: 4 - Neither Agree nor Disagree\n\n\n",
+        ]
+    else:
+        fs_answers = [
+            "\n7 - Totally Agree\n\n\n",
+            "\n2 - Disagree\n\n\n",
+            "\n4 - Neither Agree nor Disagree\n\n\n",
+        ]
+
+    fs = []
+    for p in order:
+        if p == "Q":
+            prompt += question
+            fs.append([question for _ in fs_statements])
+        elif p == "St":
+            prompt += statement
+            fs.append(fs_statements)
+        elif p == "Sc":
+            prompt += scale
+            fs.append([scale for _ in fs_statements])
+
+    if few_shot:
+        prompt_title += "-FewShot"
+        save_prompt = prompt
+        prompt = ""
+        for idx in range(len(fs[0])):
+            prompt += fs[0][idx]
+            prompt += fs[1][idx]
+            prompt += fs[2][idx]
+            if thank_you:
+                prompt += "Thank you for your participation!\n"
+            prompt += fs_answers[idx]
+
+        prompt += save_prompt
+
+    if thank_you:
+        prompt_title += "-ThankYou"
+        prompt += "Thank you for your participation!\n"
+
+    if with_answer:
+        prompt_title += "-WithAnswer"
+        prompt += "\nAnswer:"
+    else:
+        prompt += "\n"
+
+    return prompt, prompt_title
 
 
 if __name__ == "__main__":
@@ -105,16 +227,25 @@ if __name__ == "__main__":
         "georgesung/llama2_7b_chat_uncensored",
         "Tap-M/Luna-AI-Llama2-Uncensored",
     ]
-    
-    with open("prompt.json", "r+") as file:
-        # First we load existing data into a dict.
-        file_data = json.load(file)
-        # Join new_data with file_data inside emp_details
-        file_data["prompts"].append({PROMPT_TITLE: PROMPT})
-        # Sets file's current position at offset.
-        file.seek(0)
-        # convert back to json.
-        json.dump(file_data, file, indent=4)
 
-    for model in models:
-        run_prompt_on_model(model_name=model, prompt=PROMPT, prompt_title=PROMPT_TITLE, reruns=5)
+    prompt, prompt_title = generate_prompt(
+        ["Sc", "Q", "St"],
+        explicit_scale=True,
+        no_explanation=True,
+        thank_you=True,
+        few_shot=True,
+        with_answer=True,
+    )
+
+    # with open("prompt.json", "r+") as file:
+    #     # First we load existing data into a dict.
+    #     file_data = json.load(file)
+    #     # Join new_data with file_data inside emp_details
+    #     file_data["prompts"].append({PROMPT_TITLE: PROMPT})
+    #     # Sets file's current position at offset.
+    #     file.seek(0)
+    #     # convert back to json.
+    #     json.dump(file_data, file, indent=4)
+
+    # for model in models:
+    #     run_prompt_on_model(model_name=model, prompt=PROMPT, prompt_title=PROMPT_TITLE, reruns=5)
