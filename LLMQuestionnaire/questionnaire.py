@@ -2,6 +2,7 @@ import itertools
 import json
 import os
 from datetime import datetime
+import gc
 
 import pandas as pd
 import transformers
@@ -94,6 +95,15 @@ def run_prompt_on_model(
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         df.to_csv(filename, index=False, encoding="utf-8")
         print(datetime.now().time(), "\t", "Wrote csv\n\n\n")
+        
+        # Try to clear as much memory as possible
+        model = None
+        tokenizer = None
+        generator = None
+        df = None
+        data = None
+        gc.collect()
+    
 
 
 def generate_prompt(
