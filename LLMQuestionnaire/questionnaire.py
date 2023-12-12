@@ -219,5 +219,5 @@ if __name__ == "__main__":
 
         for model in models:
             run_prompt_on_model(
-                model_name=model, prompt=prompt, prompt_title=prompt_title, reruns=5
+                model_name=model, prompt=prompt, prompt_title=prompt_title
             )
