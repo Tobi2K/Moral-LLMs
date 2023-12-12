@@ -1,0 +1,80 @@
+09:57:33.306995 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+09:57:33.307067 	 Loading Model & Tokenizer
+10:07:58.709712 	 Creating Pipeline
+10:09:33.352265 	 Reading CSV
+10:09:33.360663 	 Questionnaire is OUS
+10:09:33.362099 	 Going through dataset
+10:10:00.755788 	 Done
+10:10:03.992305 	 Wrote csv
+
+
+
+10:10:03.992327 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+10:10:03.992330 	 Loading Model & Tokenizer
+10:10:44.175814 	 Creating Pipeline
+10:10:44.183414 	 Reading CSV
+10:10:44.185888 	 Questionnaire is OUS
+10:10:44.186867 	 Going through dataset
+10:11:14.058180 	 Done
+10:11:15.584997 	 Wrote csv
+
+
+
+10:11:15.585032 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+10:11:15.585036 	 Loading Model & Tokenizer
+10:11:47.116257 	 Creating Pipeline
+10:11:47.123438 	 Reading CSV
+10:11:47.125880 	 Questionnaire is OUS
+10:11:47.126830 	 Going through dataset
+11:16:25.380112 	 Done
+11:16:26.862094 	 Wrote csv
+
+
+
+11:16:26.862129 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+11:16:26.862133 	 Loading Model & Tokenizer
+11:17:11.699025 	 Creating Pipeline
+11:17:11.707466 	 Reading CSV
+11:17:11.710686 	 Questionnaire is OUS
+11:17:11.711730 	 Going through dataset
+11:17:35.463086 	 Done
+11:17:37.038488 	 Wrote csv
+
+
+
+11:17:37.038510 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+11:17:37.038514 	 Loading Model & Tokenizer
+11:18:03.813335 	 Creating Pipeline
+11:18:03.823473 	 Reading CSV
+11:18:03.825903 	 Questionnaire is OUS
+11:18:03.826774 	 Going through dataset
+11:21:17.105294 	 Done
+11:21:18.458640 	 Wrote csv
+
+
+
+11:21:18.466180 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+11:21:18.466194 	 Loading Model & Tokenizer
+11:22:06.480323 	 Creating Pipeline
+11:22:06.480560 	 Reading CSV
+11:22:06.482507 	 Questionnaire is OUS
+11:22:06.483316 	 Going through dataset
+13:26:23.432927 	 Done
+13:26:24.821702 	 Wrote csv
+
+
+
+13:26:24.821731 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+13:26:24.821735 	 Loading Model & Tokenizer
+13:27:17.855617 	 Creating Pipeline
+13:27:17.861332 	 Reading CSV
+13:27:17.863688 	 Questionnaire is OUS
+13:27:17.864547 	 Going through dataset
+API called, response code: 200
