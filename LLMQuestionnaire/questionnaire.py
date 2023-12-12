@@ -89,7 +89,7 @@ def run_prompt_on_model(
             + "/"
             + prompt_title
             + cur_date
-            + +".csv"
+            + ".csv"
         )
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         df.to_csv(filename, index=False, encoding="utf-8")
