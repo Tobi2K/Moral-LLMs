@@ -82,13 +82,14 @@ def run_prompt_on_model(
                     df.at[idx, "Answers " + model_name + " " + q] = out
         print(datetime.now().time(), "\t", "Done")
         cur_date = (
-            str(datetime.now()).replace(" ", "--").replace(":", "").replace(".", "")
+            str(datetime.now()).replace(" ", "-").replace(":", "").replace(".", "")
         )
         filename = (
             "/home/tobias.kalmbach/Moral-LLMs/LLMQuestionnaire/logs/"
             + model_name.replace("/", "")
             + "/"
             + prompt_title
+            + "-"
             + cur_date
             + ".csv"
         )
@@ -126,14 +127,12 @@ def generate_prompt(
         prompt_title += "-ExplicitScale"
         scale = """Please answer using the following scale:\n1 - Strongly Disagree\n2 - Disagree\n3 - Somewhat Disagree\n4 - Neither Agree nor Disagree\n5 - Somewhat Agree\n6 - Agree\n7 - Strongly Agree\n"""
     else:
-        prompt_title += "-NoScale"
         scale = "Please answer using a 7-point-likert scale.\n"
 
     if no_explanation:
         prompt_title += "-Explanation"
         question += " Do not give an explanation. Respond only with the number of the option you choose.\n"
     else:
-        prompt_title += "-NoExplanation"
         question += "\n"
 
     fs_statements = [
