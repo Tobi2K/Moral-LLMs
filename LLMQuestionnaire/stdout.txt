@@ -1,111 +1,1537 @@
-16:34:22.262933 	 Running meta-llama/Llama-2-7b-chat-hf 
+22:45:12.561618 	 Running meta-llama/Llama-2-7b-chat-hf 
 
-16:34:22.263000 	 Loading Model & Tokenizer
-16:46:25.427501 	 Creating Pipeline
-16:48:12.951864 	 Reading CSV
-16:48:12.956911 	 Questionnaire is OUS
-16:48:12.957933 	 Going through dataset
-16:49:02.417212 	 Done
-16:49:05.631370 	 Wrote csv
-
-
-
-16:49:05.804261 	 Running meta-llama/Llama-2-7b-chat-hf 
-
-16:49:05.804292 	 Loading Model & Tokenizer
-16:49:52.559270 	 Creating Pipeline
-16:49:52.559470 	 Reading CSV
-16:49:52.561462 	 Questionnaire is OUS
-16:49:52.562334 	 Going through dataset
-16:50:22.274610 	 Done
-16:50:23.975758 	 Wrote csv
+22:45:12.561688 	 Loading Model & Tokenizer
+22:56:12.051516 	 Creating Pipeline
+22:57:40.895867 	 Reading CSV
+22:57:40.904640 	 Questionnaire is OUS
+22:57:40.905708 	 Going through dataset
+22:58:26.469515 	 Done
+22:58:28.693043 	 Wrote csv
 
 
 
-16:50:24.114184 	 Running meta-llama/Llama-2-7b-chat-hf 
+22:58:28.836710 	 Running meta-llama/Llama-2-13b-chat-hf 
 
-16:50:24.114211 	 Loading Model & Tokenizer
-16:50:59.710658 	 Creating Pipeline
-16:50:59.711177 	 Reading CSV
-16:50:59.714489 	 Questionnaire is OUS
-16:50:59.715396 	 Going through dataset
-16:51:17.805173 	 Done
-16:51:19.371728 	 Wrote csv
-
-
-
-16:51:19.527046 	 Running meta-llama/Llama-2-7b-chat-hf 
-
-16:51:19.527070 	 Loading Model & Tokenizer
-16:51:47.837122 	 Creating Pipeline
-16:51:47.837382 	 Reading CSV
-16:51:47.839515 	 Questionnaire is OUS
-16:51:47.840578 	 Going through dataset
-16:52:15.838803 	 Done
-16:52:17.332415 	 Wrote csv
+22:58:28.836735 	 Loading Model & Tokenizer
+22:59:14.540422 	 Creating Pipeline
+22:59:14.540684 	 Reading CSV
+22:59:14.543799 	 Questionnaire is OUS
+22:59:14.544696 	 Going through dataset
+23:32:27.403969 	 Done
+23:32:28.754518 	 Wrote csv
 
 
 
-16:52:17.501538 	 Running meta-llama/Llama-2-7b-chat-hf 
+23:32:29.060278 	 Running georgesung/llama2_7b_chat_uncensored 
 
-16:52:17.501573 	 Loading Model & Tokenizer
-16:52:50.296093 	 Creating Pipeline
-16:52:50.296333 	 Reading CSV
-16:52:50.298301 	 Questionnaire is OUS
-16:52:50.299116 	 Going through dataset
-16:53:20.279133 	 Done
-16:53:21.874003 	 Wrote csv
-
-
-
-16:53:22.050062 	 Running meta-llama/Llama-2-13b-chat-hf 
-
-16:53:22.050090 	 Loading Model & Tokenizer
-16:54:12.401820 	 Creating Pipeline
-16:54:12.402027 	 Reading CSV
-16:54:12.403767 	 Questionnaire is OUS
-16:54:12.404640 	 Going through dataset
-17:49:10.716673 	 Done
-17:49:14.881022 	 Wrote csv
+23:32:29.060309 	 Loading Model & Tokenizer
+23:33:53.811385 	 Creating Pipeline
+23:33:53.811880 	 Reading CSV
+23:33:53.816042 	 Questionnaire is OUS
+23:33:53.817009 	 Going through dataset
+23:34:51.335053 	 Done
+23:34:52.722578 	 Wrote csv
 
 
 
-17:49:15.357193 	 Running meta-llama/Llama-2-13b-chat-hf 
+23:34:52.855521 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
 
-17:49:15.357227 	 Loading Model & Tokenizer
-17:50:13.981417 	 Creating Pipeline
-17:50:13.981721 	 Reading CSV
-17:50:13.984469 	 Questionnaire is OUS
-17:50:13.985547 	 Going through dataset
-18:56:44.560683 	 Done
-18:56:47.088556 	 Wrote csv
-
-
-
-18:56:47.517233 	 Running meta-llama/Llama-2-13b-chat-hf 
-
-18:56:47.517310 	 Loading Model & Tokenizer
-18:57:40.312573 	 Creating Pipeline
-18:57:40.312780 	 Reading CSV
-18:57:40.314979 	 Questionnaire is OUS
-18:57:40.315786 	 Going through dataset
-19:43:59.836718 	 Done
-19:44:02.620331 	 Wrote csv
+23:34:52.855547 	 Loading Model & Tokenizer
+23:35:37.350681 	 Creating Pipeline
+23:35:37.351089 	 Reading CSV
+23:35:37.353467 	 Questionnaire is OUS
+23:35:37.354478 	 Going through dataset
+23:49:15.902519 	 Done
+23:49:17.332369 	 Wrote csv
 
 
 
-19:44:02.784021 	 Running meta-llama/Llama-2-13b-chat-hf 
+23:49:17.463203 	 Running meta-llama/Llama-2-7b-chat-hf 
 
-19:44:02.784055 	 Loading Model & Tokenizer
-19:45:07.011158 	 Creating Pipeline
-19:45:07.011395 	 Reading CSV
-19:45:07.014386 	 Questionnaire is OUS
-19:45:07.015404 	 Going through dataset
-21:30:08.962083 	 Done
-21:30:10.363837 	 Wrote csv
+23:49:17.463222 	 Loading Model & Tokenizer
+23:49:54.499154 	 Creating Pipeline
+23:49:54.499408 	 Reading CSV
+23:49:54.502444 	 Questionnaire is OUS
+23:49:54.503349 	 Going through dataset
+23:50:45.846101 	 Done
+23:50:46.957674 	 Wrote csv
 
 
 
-21:30:11.207427 	 Running meta-llama/Llama-2-13b-chat-hf 
+23:50:47.135864 	 Running meta-llama/Llama-2-13b-chat-hf 
 
-21:30:11.207458 	 Loading Model & Tokenizer
+23:50:47.135891 	 Loading Model & Tokenizer
+23:51:30.754296 	 Creating Pipeline
+23:51:30.754505 	 Reading CSV
+23:51:30.756610 	 Questionnaire is OUS
+23:51:30.757491 	 Going through dataset
+00:50:46.395837 	 Done
+00:50:48.520073 	 Wrote csv
+
+
+
+00:50:48.696683 	 Running georgesung/llama2_7b_chat_uncensored 
+
+00:50:48.696713 	 Loading Model & Tokenizer
+00:51:37.627966 	 Creating Pipeline
+00:51:37.628319 	 Reading CSV
+00:51:37.631662 	 Questionnaire is OUS
+00:51:37.632528 	 Going through dataset
+00:52:35.033103 	 Done
+00:52:36.451464 	 Wrote csv
+
+
+
+00:52:36.570343 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+00:52:36.570374 	 Loading Model & Tokenizer
+00:53:21.122985 	 Creating Pipeline
+00:53:21.123230 	 Reading CSV
+00:53:21.125278 	 Questionnaire is OUS
+00:53:21.126186 	 Going through dataset
+01:06:45.846622 	 Done
+01:06:47.040211 	 Wrote csv
+
+
+
+01:06:47.159635 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+01:06:47.159655 	 Loading Model & Tokenizer
+01:07:22.854515 	 Creating Pipeline
+01:07:22.854670 	 Reading CSV
+01:07:22.856527 	 Questionnaire is OUS
+01:07:22.857337 	 Going through dataset
+01:07:32.154128 	 Done
+01:07:33.188325 	 Wrote csv
+
+
+
+01:07:33.311000 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+01:07:33.311031 	 Loading Model & Tokenizer
+01:08:14.972343 	 Creating Pipeline
+01:08:14.972512 	 Reading CSV
+01:08:14.974319 	 Questionnaire is OUS
+01:08:14.975078 	 Going through dataset
+01:33:23.614470 	 Done
+01:33:24.901420 	 Wrote csv
+
+
+
+01:33:25.071560 	 Running georgesung/llama2_7b_chat_uncensored 
+
+01:33:25.071591 	 Loading Model & Tokenizer
+01:34:10.386623 	 Creating Pipeline
+01:34:10.386803 	 Reading CSV
+01:34:10.388760 	 Questionnaire is OUS
+01:34:10.389521 	 Going through dataset
+01:34:21.199430 	 Done
+01:34:22.356756 	 Wrote csv
+
+
+
+01:34:22.497220 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+01:34:22.497248 	 Loading Model & Tokenizer
+01:35:06.157699 	 Creating Pipeline
+01:35:06.157896 	 Reading CSV
+01:35:06.159821 	 Questionnaire is OUS
+01:35:06.160590 	 Going through dataset
+01:35:30.669094 	 Done
+01:35:31.960675 	 Wrote csv
+
+
+
+01:35:32.076795 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+01:35:32.076816 	 Loading Model & Tokenizer
+01:36:07.396426 	 Creating Pipeline
+01:36:07.396608 	 Reading CSV
+01:36:07.398796 	 Questionnaire is OUS
+01:36:07.399639 	 Going through dataset
+01:36:15.764118 	 Done
+01:36:16.841359 	 Wrote csv
+
+
+
+01:36:16.958610 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+01:36:16.958641 	 Loading Model & Tokenizer
+01:36:59.152106 	 Creating Pipeline
+01:36:59.152277 	 Reading CSV
+01:36:59.154029 	 Questionnaire is OUS
+01:36:59.154794 	 Going through dataset
+02:10:52.072727 	 Done
+02:10:52.797754 	 Wrote csv
+
+
+
+02:10:52.949476 	 Running georgesung/llama2_7b_chat_uncensored 
+
+02:10:52.949505 	 Loading Model & Tokenizer
+02:11:30.268458 	 Creating Pipeline
+02:11:30.268666 	 Reading CSV
+02:11:30.270816 	 Questionnaire is OUS
+02:11:30.271599 	 Going through dataset
+02:12:21.722093 	 Done
+02:12:22.722920 	 Wrote csv
+
+
+
+02:12:22.832680 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+02:12:22.832709 	 Loading Model & Tokenizer
+02:12:58.961801 	 Creating Pipeline
+02:12:58.961999 	 Reading CSV
+02:12:58.964721 	 Questionnaire is OUS
+02:12:58.965494 	 Going through dataset
+02:15:26.310126 	 Done
+02:15:27.249508 	 Wrote csv
+
+
+
+02:15:27.364280 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+02:15:27.364299 	 Loading Model & Tokenizer
+02:15:57.349567 	 Creating Pipeline
+02:15:57.349738 	 Reading CSV
+02:15:57.351550 	 Questionnaire is OUS
+02:15:57.352433 	 Going through dataset
+02:16:10.567217 	 Done
+02:16:11.305559 	 Wrote csv
+
+
+
+02:16:11.423772 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+02:16:11.423805 	 Loading Model & Tokenizer
+02:16:42.951400 	 Creating Pipeline
+02:16:42.951574 	 Reading CSV
+02:16:42.953632 	 Questionnaire is OUS
+02:16:42.954444 	 Going through dataset
+03:03:16.680081 	 Done
+03:03:17.474449 	 Wrote csv
+
+
+
+03:03:17.638401 	 Running georgesung/llama2_7b_chat_uncensored 
+
+03:03:17.638430 	 Loading Model & Tokenizer
+03:03:58.456412 	 Creating Pipeline
+03:03:58.456604 	 Reading CSV
+03:03:58.458683 	 Questionnaire is OUS
+03:03:58.459434 	 Going through dataset
+03:04:55.413616 	 Done
+03:04:56.462853 	 Wrote csv
+
+
+
+03:04:56.569875 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+03:04:56.569902 	 Loading Model & Tokenizer
+03:05:30.732490 	 Creating Pipeline
+03:05:30.732662 	 Reading CSV
+03:05:30.734579 	 Questionnaire is OUS
+03:05:30.735374 	 Going through dataset
+03:18:40.209719 	 Done
+03:18:41.064163 	 Wrote csv
+
+
+
+03:18:41.201042 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+03:18:41.201063 	 Loading Model & Tokenizer
+03:19:12.204876 	 Creating Pipeline
+03:19:12.205037 	 Reading CSV
+03:19:12.207158 	 Questionnaire is OUS
+03:19:12.207919 	 Going through dataset
+03:20:03.824971 	 Done
+03:20:04.840073 	 Wrote csv
+
+
+
+03:20:04.956536 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+03:20:04.956565 	 Loading Model & Tokenizer
+03:20:35.794893 	 Creating Pipeline
+03:20:35.795047 	 Reading CSV
+03:20:35.796784 	 Questionnaire is OUS
+03:20:35.797561 	 Going through dataset
+04:28:26.204722 	 Done
+04:28:27.480104 	 Wrote csv
+
+
+
+04:28:27.658069 	 Running georgesung/llama2_7b_chat_uncensored 
+
+04:28:27.658105 	 Loading Model & Tokenizer
+04:29:15.138189 	 Creating Pipeline
+04:29:15.138477 	 Reading CSV
+04:29:15.141977 	 Questionnaire is OUS
+04:29:15.142771 	 Going through dataset
+04:30:11.824379 	 Done
+04:30:12.911737 	 Wrote csv
+
+
+
+04:30:13.040680 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+04:30:13.040707 	 Loading Model & Tokenizer
+04:31:00.369029 	 Creating Pipeline
+04:31:00.369256 	 Reading CSV
+04:31:00.372030 	 Questionnaire is OUS
+04:31:00.372839 	 Going through dataset
+04:43:58.847885 	 Done
+04:44:00.438303 	 Wrote csv
+
+
+
+04:44:00.569314 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+04:44:00.569333 	 Loading Model & Tokenizer
+04:44:42.297057 	 Creating Pipeline
+04:44:42.297253 	 Reading CSV
+04:44:42.299195 	 Questionnaire is OUS
+04:44:42.300009 	 Going through dataset
+04:44:44.984157 	 Done
+04:44:47.381842 	 Wrote csv
+
+
+
+04:44:47.499891 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+04:44:47.499918 	 Loading Model & Tokenizer
+04:45:33.896094 	 Creating Pipeline
+04:45:33.896281 	 Reading CSV
+04:45:33.897912 	 Questionnaire is OUS
+04:45:33.898656 	 Going through dataset
+05:09:18.002917 	 Done
+05:09:19.493581 	 Wrote csv
+
+
+
+05:09:19.667001 	 Running georgesung/llama2_7b_chat_uncensored 
+
+05:09:19.667032 	 Loading Model & Tokenizer
+05:10:10.823615 	 Creating Pipeline
+05:10:10.823938 	 Reading CSV
+05:10:10.826807 	 Questionnaire is OUS
+05:10:10.827556 	 Going through dataset
+05:11:02.193477 	 Done
+05:11:03.374111 	 Wrote csv
+
+
+
+05:11:03.475593 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+05:11:03.475621 	 Loading Model & Tokenizer
+05:11:51.513025 	 Creating Pipeline
+05:11:51.513222 	 Reading CSV
+05:11:51.515194 	 Questionnaire is OUS
+05:11:51.516023 	 Going through dataset
+05:12:51.917396 	 Done
+05:12:53.545664 	 Wrote csv
+
+
+
+05:12:53.682538 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+05:12:53.682559 	 Loading Model & Tokenizer
+05:13:32.016828 	 Creating Pipeline
+05:13:32.016992 	 Reading CSV
+05:13:32.018901 	 Questionnaire is OUS
+05:13:32.019646 	 Going through dataset
+05:13:42.935094 	 Done
+05:13:44.531639 	 Wrote csv
+
+
+
+05:13:44.644698 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+05:13:44.644733 	 Loading Model & Tokenizer
+05:14:35.157836 	 Creating Pipeline
+05:14:35.158018 	 Reading CSV
+05:14:35.160027 	 Questionnaire is OUS
+05:14:35.160911 	 Going through dataset
+05:34:16.906268 	 Done
+05:34:18.506793 	 Wrote csv
+
+
+
+05:34:18.678045 	 Running georgesung/llama2_7b_chat_uncensored 
+
+05:34:18.678077 	 Loading Model & Tokenizer
+05:35:10.697807 	 Creating Pipeline
+05:35:10.698036 	 Reading CSV
+05:35:10.700013 	 Questionnaire is OUS
+05:35:10.700804 	 Going through dataset
+05:36:01.953142 	 Done
+05:36:03.343762 	 Wrote csv
+
+
+
+05:36:03.455014 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+05:36:03.455050 	 Loading Model & Tokenizer
+05:36:46.702222 	 Creating Pipeline
+05:36:46.702438 	 Reading CSV
+05:36:46.705212 	 Questionnaire is OUS
+05:36:46.705959 	 Going through dataset
+05:38:42.708180 	 Done
+05:38:43.876110 	 Wrote csv
+
+
+
+05:38:43.978545 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+05:38:43.978566 	 Loading Model & Tokenizer
+05:39:26.235353 	 Creating Pipeline
+05:39:26.235507 	 Reading CSV
+05:39:26.237329 	 Questionnaire is OUS
+05:39:26.238068 	 Going through dataset
+05:40:00.943174 	 Done
+05:40:02.376238 	 Wrote csv
+
+
+
+05:40:02.494221 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+05:40:02.494250 	 Loading Model & Tokenizer
+05:40:49.170599 	 Creating Pipeline
+05:40:49.170752 	 Reading CSV
+05:40:49.172671 	 Questionnaire is OUS
+05:40:49.173416 	 Going through dataset
+06:32:28.593587 	 Done
+06:32:30.054984 	 Wrote csv
+
+
+
+06:32:30.213418 	 Running georgesung/llama2_7b_chat_uncensored 
+
+06:32:30.213453 	 Loading Model & Tokenizer
+06:33:24.412551 	 Creating Pipeline
+06:33:24.412796 	 Reading CSV
+06:33:24.415742 	 Questionnaire is OUS
+06:33:24.416552 	 Going through dataset
+06:34:21.746844 	 Done
+06:34:23.199241 	 Wrote csv
+
+
+
+06:34:23.308885 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+06:34:23.308916 	 Loading Model & Tokenizer
+06:35:09.943622 	 Creating Pipeline
+06:35:09.943849 	 Reading CSV
+06:35:09.946615 	 Questionnaire is OUS
+06:35:09.947388 	 Going through dataset
+06:47:25.509447 	 Done
+06:47:26.829908 	 Wrote csv
+
+
+
+06:47:26.932419 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+06:47:26.932442 	 Loading Model & Tokenizer
+06:48:11.526381 	 Creating Pipeline
+06:48:11.526565 	 Reading CSV
+06:48:11.528881 	 Questionnaire is OUS
+06:48:11.529828 	 Going through dataset
+06:49:08.853693 	 Done
+06:49:10.518700 	 Wrote csv
+
+
+
+06:49:10.662472 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+06:49:10.662498 	 Loading Model & Tokenizer
+06:49:55.961343 	 Creating Pipeline
+06:49:55.961513 	 Reading CSV
+06:49:55.963324 	 Questionnaire is OUS
+06:49:55.964167 	 Going through dataset
+07:56:04.305277 	 Done
+07:56:05.489007 	 Wrote csv
+
+
+
+07:56:05.657691 	 Running georgesung/llama2_7b_chat_uncensored 
+
+07:56:05.657720 	 Loading Model & Tokenizer
+07:56:58.641244 	 Creating Pipeline
+07:56:58.641516 	 Reading CSV
+07:56:58.644944 	 Questionnaire is OUS
+07:56:58.645734 	 Going through dataset
+07:57:54.580644 	 Done
+07:57:55.574352 	 Wrote csv
+
+
+
+07:57:55.690189 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+07:57:55.690221 	 Loading Model & Tokenizer
+07:58:38.118867 	 Creating Pipeline
+07:58:38.119119 	 Reading CSV
+07:58:38.121242 	 Questionnaire is OUS
+07:58:38.122072 	 Going through dataset
+08:10:38.567134 	 Done
+08:10:39.885626 	 Wrote csv
+
+
+
+08:10:40.026886 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+08:10:40.026907 	 Loading Model & Tokenizer
+08:11:23.515328 	 Creating Pipeline
+08:11:23.515499 	 Reading CSV
+08:11:23.517403 	 Questionnaire is OUS
+08:11:23.518272 	 Going through dataset
+08:11:41.213333 	 Done
+08:11:42.523602 	 Wrote csv
+
+
+
+08:11:42.660823 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+08:11:42.660852 	 Loading Model & Tokenizer
+08:12:24.430007 	 Creating Pipeline
+08:12:24.430184 	 Reading CSV
+08:12:24.432086 	 Questionnaire is OUS
+08:12:24.432942 	 Going through dataset
+08:45:48.724727 	 Done
+08:45:50.241902 	 Wrote csv
+
+
+
+08:45:50.395000 	 Running georgesung/llama2_7b_chat_uncensored 
+
+08:45:50.395030 	 Loading Model & Tokenizer
+08:46:41.436966 	 Creating Pipeline
+08:46:41.437180 	 Reading CSV
+08:46:41.439234 	 Questionnaire is OUS
+08:46:41.439993 	 Going through dataset
+08:47:01.554443 	 Done
+08:47:02.423418 	 Wrote csv
+
+
+
+08:47:02.536633 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+08:47:02.536661 	 Loading Model & Tokenizer
+08:47:44.857506 	 Creating Pipeline
+08:47:44.857690 	 Reading CSV
+08:47:44.859602 	 Questionnaire is OUS
+08:47:44.860537 	 Going through dataset
+08:48:32.282638 	 Done
+08:48:33.560478 	 Wrote csv
+
+
+
+08:48:33.671924 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+08:48:33.671947 	 Loading Model & Tokenizer
+08:49:10.779316 	 Creating Pipeline
+08:49:10.779541 	 Reading CSV
+08:49:10.782353 	 Questionnaire is OUS
+08:49:10.783137 	 Going through dataset
+08:49:21.992034 	 Done
+08:49:23.060268 	 Wrote csv
+
+
+
+08:49:23.163487 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+08:49:23.163515 	 Loading Model & Tokenizer
+08:50:07.166919 	 Creating Pipeline
+08:50:07.167074 	 Reading CSV
+08:50:07.168870 	 Questionnaire is OUS
+08:50:07.169663 	 Going through dataset
+09:28:28.923895 	 Done
+09:28:30.227660 	 Wrote csv
+
+
+
+09:28:30.432939 	 Running georgesung/llama2_7b_chat_uncensored 
+
+09:28:30.432968 	 Loading Model & Tokenizer
+09:29:19.984261 	 Creating Pipeline
+09:29:19.984432 	 Reading CSV
+09:29:19.986583 	 Questionnaire is OUS
+09:29:19.987318 	 Going through dataset
+09:30:11.115646 	 Done
+09:30:12.632386 	 Wrote csv
+
+
+
+09:30:12.739166 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+09:30:12.739198 	 Loading Model & Tokenizer
+09:31:03.786274 	 Creating Pipeline
+09:31:03.786451 	 Reading CSV
+09:31:03.788297 	 Questionnaire is OUS
+09:31:03.789048 	 Going through dataset
+09:35:45.848099 	 Done
+09:35:48.018057 	 Wrote csv
+
+
+
+09:35:48.124696 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+09:35:48.124719 	 Loading Model & Tokenizer
+09:36:37.310445 	 Creating Pipeline
+09:36:37.310616 	 Reading CSV
+09:36:37.312498 	 Questionnaire is OUS
+09:36:37.313268 	 Going through dataset
+09:37:30.400191 	 Done
+09:37:31.572167 	 Wrote csv
+
+
+
+09:37:31.691455 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+09:37:31.691485 	 Loading Model & Tokenizer
+09:38:15.316591 	 Creating Pipeline
+09:38:15.316741 	 Reading CSV
+09:38:15.318728 	 Questionnaire is OUS
+09:38:15.319567 	 Going through dataset
+10:17:43.408906 	 Done
+10:17:44.360354 	 Wrote csv
+
+
+
+10:17:44.521878 	 Running georgesung/llama2_7b_chat_uncensored 
+
+10:17:44.521909 	 Loading Model & Tokenizer
+10:18:27.096074 	 Creating Pipeline
+10:18:27.096251 	 Reading CSV
+10:18:27.098500 	 Questionnaire is OUS
+10:18:27.099267 	 Going through dataset
+10:19:22.785077 	 Done
+10:19:23.331112 	 Wrote csv
+
+
+
+10:19:23.437392 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+10:19:23.437423 	 Loading Model & Tokenizer
+10:19:55.739624 	 Creating Pipeline
+10:19:55.739870 	 Reading CSV
+10:19:55.742046 	 Questionnaire is OUS
+10:19:55.742915 	 Going through dataset
+10:28:18.503007 	 Done
+10:28:19.433800 	 Wrote csv
+
+
+
+10:28:19.540507 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+10:28:19.540530 	 Loading Model & Tokenizer
+10:28:44.031497 	 Creating Pipeline
+10:28:44.031669 	 Reading CSV
+10:28:44.033593 	 Questionnaire is OUS
+10:28:44.034349 	 Going through dataset
+10:29:28.949920 	 Done
+10:29:29.678684 	 Wrote csv
+
+
+
+10:29:29.791384 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+10:29:29.791415 	 Loading Model & Tokenizer
+10:30:02.079606 	 Creating Pipeline
+10:30:02.079821 	 Reading CSV
+10:30:02.081684 	 Questionnaire is OUS
+10:30:02.082438 	 Going through dataset
+11:32:22.747800 	 Done
+11:32:23.498473 	 Wrote csv
+
+
+
+11:32:23.703528 	 Running georgesung/llama2_7b_chat_uncensored 
+
+11:32:23.703557 	 Loading Model & Tokenizer
+11:32:57.744775 	 Creating Pipeline
+11:32:57.744963 	 Reading CSV
+11:32:57.747294 	 Questionnaire is OUS
+11:32:57.748151 	 Going through dataset
+11:44:30.370279 	 Done
+11:44:31.143714 	 Wrote csv
+
+
+
+11:44:31.292577 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+11:44:31.292604 	 Loading Model & Tokenizer
+11:45:09.117752 	 Creating Pipeline
+11:45:09.117957 	 Reading CSV
+11:45:09.120153 	 Questionnaire is OUS
+11:45:09.120922 	 Going through dataset
+11:53:35.359158 	 Done
+11:53:39.293560 	 Wrote csv
+
+
+
+11:53:39.408814 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+11:53:39.408835 	 Loading Model & Tokenizer
+11:54:04.733861 	 Creating Pipeline
+11:54:04.734013 	 Reading CSV
+11:54:04.735764 	 Questionnaire is OUS
+11:54:04.736607 	 Going through dataset
+11:54:10.134995 	 Done
+11:54:10.948089 	 Wrote csv
+
+
+
+11:54:11.085220 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+11:54:11.085249 	 Loading Model & Tokenizer
+11:54:39.836742 	 Creating Pipeline
+11:54:39.836914 	 Reading CSV
+11:54:39.839152 	 Questionnaire is OUS
+11:54:39.840010 	 Going through dataset
+12:17:56.607902 	 Done
+12:17:57.409953 	 Wrote csv
+
+
+
+12:17:57.702896 	 Running georgesung/llama2_7b_chat_uncensored 
+
+12:17:57.702928 	 Loading Model & Tokenizer
+12:18:33.839174 	 Creating Pipeline
+12:18:33.839351 	 Reading CSV
+12:18:33.841548 	 Questionnaire is OUS
+12:18:33.842319 	 Going through dataset
+12:19:24.991939 	 Done
+12:19:25.967059 	 Wrote csv
+
+
+
+12:19:26.067163 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+12:19:26.067192 	 Loading Model & Tokenizer
+12:20:04.554609 	 Creating Pipeline
+12:20:04.554845 	 Reading CSV
+12:20:04.557852 	 Questionnaire is OUS
+12:20:04.558636 	 Going through dataset
+12:20:25.470644 	 Done
+12:20:26.423089 	 Wrote csv
+
+
+
+12:20:26.531511 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+12:20:26.531532 	 Loading Model & Tokenizer
+12:20:54.631841 	 Creating Pipeline
+12:20:54.632075 	 Reading CSV
+12:20:54.634883 	 Questionnaire is OUS
+12:20:54.635762 	 Going through dataset
+12:21:04.368628 	 Done
+12:21:05.094760 	 Wrote csv
+
+
+
+12:21:05.213151 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+12:21:05.213176 	 Loading Model & Tokenizer
+12:21:34.990750 	 Creating Pipeline
+12:21:34.990899 	 Reading CSV
+12:21:34.992620 	 Questionnaire is OUS
+12:21:34.993380 	 Going through dataset
+12:54:12.030242 	 Done
+12:54:12.977825 	 Wrote csv
+
+
+
+12:54:13.167644 	 Running georgesung/llama2_7b_chat_uncensored 
+
+12:54:13.167675 	 Loading Model & Tokenizer
+12:54:53.011631 	 Creating Pipeline
+12:54:53.011873 	 Reading CSV
+12:54:53.015003 	 Questionnaire is OUS
+12:54:53.015837 	 Going through dataset
+12:55:44.066255 	 Done
+12:55:45.195641 	 Wrote csv
+
+
+
+12:55:45.300154 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+12:55:45.300185 	 Loading Model & Tokenizer
+12:56:21.883066 	 Creating Pipeline
+12:56:21.883249 	 Reading CSV
+12:56:21.885132 	 Questionnaire is OUS
+12:56:21.885926 	 Going through dataset
+12:57:56.691298 	 Done
+12:57:57.485010 	 Wrote csv
+
+
+
+12:57:57.587342 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+12:57:57.587363 	 Loading Model & Tokenizer
+12:58:25.397896 	 Creating Pipeline
+12:58:25.398054 	 Reading CSV
+12:58:25.399771 	 Questionnaire is OUS
+12:58:25.400588 	 Going through dataset
+12:58:36.857609 	 Done
+12:58:37.890996 	 Wrote csv
+
+
+
+12:58:38.043483 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+12:58:38.043527 	 Loading Model & Tokenizer
+12:59:10.774412 	 Creating Pipeline
+12:59:10.774560 	 Reading CSV
+12:59:10.776267 	 Questionnaire is OUS
+12:59:10.777045 	 Going through dataset
+13:24:21.150477 	 Done
+13:24:22.562840 	 Wrote csv
+
+
+
+13:24:22.735503 	 Running georgesung/llama2_7b_chat_uncensored 
+
+13:24:22.735562 	 Loading Model & Tokenizer
+13:25:13.483595 	 Creating Pipeline
+13:25:13.483824 	 Reading CSV
+13:25:13.485930 	 Questionnaire is OUS
+13:25:13.486699 	 Going through dataset
+13:30:56.729134 	 Done
+13:30:57.579497 	 Wrote csv
+
+
+
+13:30:57.697987 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+13:30:57.698015 	 Loading Model & Tokenizer
+13:31:42.027949 	 Creating Pipeline
+13:31:42.028137 	 Reading CSV
+13:31:42.030133 	 Questionnaire is OUS
+13:31:42.030854 	 Going through dataset
+13:41:10.841012 	 Done
+13:41:11.761805 	 Wrote csv
+
+
+
+13:41:11.893969 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+13:41:11.893988 	 Loading Model & Tokenizer
+13:41:42.343009 	 Creating Pipeline
+13:41:42.343211 	 Reading CSV
+13:41:42.345195 	 Questionnaire is OUS
+13:41:42.346041 	 Going through dataset
+13:42:03.989954 	 Done
+13:42:04.835874 	 Wrote csv
+
+
+
+13:42:04.938182 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+13:42:04.938208 	 Loading Model & Tokenizer
+13:42:37.435175 	 Creating Pipeline
+13:42:37.435330 	 Reading CSV
+13:42:37.437134 	 Questionnaire is OUS
+13:42:37.438033 	 Going through dataset
+14:47:10.966754 	 Done
+14:47:12.090202 	 Wrote csv
+
+
+
+14:47:12.370918 	 Running georgesung/llama2_7b_chat_uncensored 
+
+14:47:12.370951 	 Loading Model & Tokenizer
+14:47:53.736699 	 Creating Pipeline
+14:47:53.736880 	 Reading CSV
+14:47:53.739108 	 Questionnaire is OUS
+14:47:53.739873 	 Going through dataset
+14:48:47.600435 	 Done
+14:48:48.578464 	 Wrote csv
+
+
+
+14:48:48.683692 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+14:48:48.683721 	 Loading Model & Tokenizer
+14:49:29.219126 	 Creating Pipeline
+14:49:29.219350 	 Reading CSV
+14:49:29.222022 	 Questionnaire is OUS
+14:49:29.222789 	 Going through dataset
+14:58:42.226472 	 Done
+14:58:43.424979 	 Wrote csv
+
+
+
+14:58:43.525137 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+14:58:43.525157 	 Loading Model & Tokenizer
+14:59:11.551336 	 Creating Pipeline
+14:59:11.551511 	 Reading CSV
+14:59:11.553356 	 Questionnaire is OUS
+14:59:11.554128 	 Going through dataset
+14:59:25.274692 	 Done
+14:59:26.317568 	 Wrote csv
+
+
+
+14:59:26.432485 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+14:59:26.432513 	 Loading Model & Tokenizer
+15:00:00.019497 	 Creating Pipeline
+15:00:00.019664 	 Reading CSV
+15:00:00.021587 	 Questionnaire is OUS
+15:00:00.022351 	 Going through dataset
+15:26:46.519418 	 Done
+15:26:47.501158 	 Wrote csv
+
+
+
+15:26:47.738467 	 Running georgesung/llama2_7b_chat_uncensored 
+
+15:26:47.738501 	 Loading Model & Tokenizer
+15:27:31.212528 	 Creating Pipeline
+15:27:31.212745 	 Reading CSV
+15:27:31.215456 	 Questionnaire is OUS
+15:27:31.216246 	 Going through dataset
+15:28:04.973496 	 Done
+15:28:13.451182 	 Wrote csv
+
+
+
+15:28:13.554876 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+15:28:13.554907 	 Loading Model & Tokenizer
+15:28:54.851067 	 Creating Pipeline
+15:28:54.851240 	 Reading CSV
+15:28:54.853137 	 Questionnaire is OUS
+15:28:54.853921 	 Going through dataset
+15:30:13.112602 	 Done
+15:30:14.050035 	 Wrote csv
+
+
+
+15:30:14.153573 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+15:30:14.153594 	 Loading Model & Tokenizer
+15:30:39.396559 	 Creating Pipeline
+15:30:39.396716 	 Reading CSV
+15:30:39.398330 	 Questionnaire is OUS
+15:30:39.399083 	 Going through dataset
+15:31:07.071917 	 Done
+15:31:07.935160 	 Wrote csv
+
+
+
+15:31:08.041826 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+15:31:08.041858 	 Loading Model & Tokenizer
+15:31:41.121121 	 Creating Pipeline
+15:31:41.121268 	 Reading CSV
+15:31:41.122880 	 Questionnaire is OUS
+15:31:41.123646 	 Going through dataset
+15:59:08.852445 	 Done
+15:59:09.594682 	 Wrote csv
+
+
+
+15:59:09.752664 	 Running georgesung/llama2_7b_chat_uncensored 
+
+15:59:09.752697 	 Loading Model & Tokenizer
+15:59:47.961745 	 Creating Pipeline
+15:59:47.961961 	 Reading CSV
+15:59:47.972554 	 Questionnaire is OUS
+15:59:47.977346 	 Going through dataset
+16:00:39.468242 	 Done
+16:00:40.337243 	 Wrote csv
+
+
+
+16:00:40.444394 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+16:00:40.444444 	 Loading Model & Tokenizer
+16:01:16.861937 	 Creating Pipeline
+16:01:16.862131 	 Reading CSV
+16:01:16.864039 	 Questionnaire is OUS
+16:01:16.864787 	 Going through dataset
+16:03:18.482205 	 Done
+16:03:19.189577 	 Wrote csv
+
+
+
+16:03:19.294456 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+16:03:19.294479 	 Loading Model & Tokenizer
+16:03:46.774668 	 Creating Pipeline
+16:03:46.774863 	 Reading CSV
+16:03:46.776695 	 Questionnaire is OUS
+16:03:46.777451 	 Going through dataset
+16:03:56.960238 	 Done
+16:03:57.943295 	 Wrote csv
+
+
+
+16:03:58.058713 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+16:03:58.058753 	 Loading Model & Tokenizer
+16:04:28.045982 	 Creating Pipeline
+16:04:28.046129 	 Reading CSV
+16:04:28.047801 	 Questionnaire is OUS
+16:04:28.048567 	 Going through dataset
+16:24:04.820269 	 Done
+16:24:05.689881 	 Wrote csv
+
+
+
+16:24:05.852664 	 Running georgesung/llama2_7b_chat_uncensored 
+
+16:24:05.852700 	 Loading Model & Tokenizer
+16:24:47.769751 	 Creating Pipeline
+16:24:47.769958 	 Reading CSV
+16:24:47.772161 	 Questionnaire is OUS
+16:24:47.772987 	 Going through dataset
+16:25:41.526436 	 Done
+16:25:42.689541 	 Wrote csv
+
+
+
+16:25:42.809599 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+16:25:42.809629 	 Loading Model & Tokenizer
+16:26:23.071843 	 Creating Pipeline
+16:26:23.072100 	 Reading CSV
+16:26:23.075114 	 Questionnaire is OUS
+16:26:23.075979 	 Going through dataset
+16:35:13.589387 	 Done
+16:35:14.436058 	 Wrote csv
+
+
+
+16:35:14.558210 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+16:35:14.558231 	 Loading Model & Tokenizer
+16:35:43.299778 	 Creating Pipeline
+16:35:43.299939 	 Reading CSV
+16:35:43.301781 	 Questionnaire is OUS
+16:35:43.302531 	 Going through dataset
+16:36:01.593704 	 Done
+16:36:02.270766 	 Wrote csv
+
+
+
+16:36:02.367464 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+16:36:02.367492 	 Loading Model & Tokenizer
+16:36:32.632970 	 Creating Pipeline
+16:36:32.633147 	 Reading CSV
+16:36:32.635065 	 Questionnaire is OUS
+16:36:32.635904 	 Going through dataset
+17:37:15.237459 	 Done
+17:37:16.299473 	 Wrote csv
+
+
+
+17:37:16.466859 	 Running georgesung/llama2_7b_chat_uncensored 
+
+17:37:16.466900 	 Loading Model & Tokenizer
+17:37:59.890159 	 Creating Pipeline
+17:37:59.890413 	 Reading CSV
+17:37:59.892858 	 Questionnaire is OUS
+17:37:59.893684 	 Going through dataset
+17:38:56.213226 	 Done
+17:38:57.079775 	 Wrote csv
+
+
+
+17:38:57.188912 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+17:38:57.188945 	 Loading Model & Tokenizer
+17:39:33.521847 	 Creating Pipeline
+17:39:33.522066 	 Reading CSV
+17:39:33.524934 	 Questionnaire is OUS
+17:39:33.525738 	 Going through dataset
+17:48:09.421909 	 Done
+17:48:10.305691 	 Wrote csv
+
+
+
+17:48:10.412023 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+17:48:10.412044 	 Loading Model & Tokenizer
+17:48:40.383090 	 Creating Pipeline
+17:48:40.383240 	 Reading CSV
+17:48:40.384949 	 Questionnaire is OUS
+17:48:40.385704 	 Going through dataset
+17:48:58.575007 	 Done
+17:48:59.647740 	 Wrote csv
+
+
+
+17:48:59.755128 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+17:48:59.755158 	 Loading Model & Tokenizer
+17:49:31.887875 	 Creating Pipeline
+17:49:31.888029 	 Reading CSV
+17:49:31.889666 	 Questionnaire is OUS
+17:49:31.890414 	 Going through dataset
+18:47:24.450982 	 Done
+18:47:25.454502 	 Wrote csv
+
+
+
+18:47:25.622068 	 Running georgesung/llama2_7b_chat_uncensored 
+
+18:47:25.622106 	 Loading Model & Tokenizer
+18:48:07.587335 	 Creating Pipeline
+18:48:07.587585 	 Reading CSV
+18:48:07.590867 	 Questionnaire is OUS
+18:48:07.591634 	 Going through dataset
+18:48:58.083636 	 Done
+18:48:59.258380 	 Wrote csv
+
+
+
+18:48:59.361874 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+18:48:59.361903 	 Loading Model & Tokenizer
+18:49:36.657729 	 Creating Pipeline
+18:49:36.657923 	 Reading CSV
+18:49:36.659929 	 Questionnaire is OUS
+18:49:36.660798 	 Going through dataset
+18:51:15.095034 	 Done
+18:51:15.919856 	 Wrote csv
+
+
+
+18:51:16.055665 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+18:51:16.055685 	 Loading Model & Tokenizer
+18:51:44.946749 	 Creating Pipeline
+18:51:44.946962 	 Reading CSV
+18:51:44.948946 	 Questionnaire is OUS
+18:51:44.949815 	 Going through dataset
+18:52:03.320804 	 Done
+18:52:04.437677 	 Wrote csv
+
+
+
+18:52:04.578704 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+18:52:04.578731 	 Loading Model & Tokenizer
+18:52:37.117929 	 Creating Pipeline
+18:52:37.118084 	 Reading CSV
+18:52:37.119850 	 Questionnaire is OUS
+18:52:37.120676 	 Going through dataset
+19:35:32.396632 	 Done
+19:35:33.080287 	 Wrote csv
+
+
+
+19:35:33.230979 	 Running georgesung/llama2_7b_chat_uncensored 
+
+19:35:33.231008 	 Loading Model & Tokenizer
+19:36:11.169752 	 Creating Pipeline
+19:36:11.169923 	 Reading CSV
+19:36:11.171805 	 Questionnaire is OUS
+19:36:11.172586 	 Going through dataset
+19:37:01.749598 	 Done
+19:37:02.770078 	 Wrote csv
+
+
+
+19:37:02.869733 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+19:37:02.869762 	 Loading Model & Tokenizer
+19:37:38.061703 	 Creating Pipeline
+19:37:38.061902 	 Reading CSV
+19:37:38.064238 	 Questionnaire is OUS
+19:37:38.065072 	 Going through dataset
+19:40:32.601708 	 Done
+19:40:33.363484 	 Wrote csv
+
+
+
+19:40:33.465885 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+19:40:33.465905 	 Loading Model & Tokenizer
+19:40:58.618835 	 Creating Pipeline
+19:40:58.618988 	 Reading CSV
+19:40:58.620721 	 Questionnaire is OUS
+19:40:58.621502 	 Going through dataset
+19:41:03.451290 	 Done
+19:41:04.363017 	 Wrote csv
+
+
+
+19:41:04.462534 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+19:41:04.462563 	 Loading Model & Tokenizer
+19:41:34.692774 	 Creating Pipeline
+19:41:34.693027 	 Reading CSV
+19:41:34.695590 	 Questionnaire is OUS
+19:41:34.696356 	 Going through dataset
+20:36:17.603840 	 Done
+20:36:18.699458 	 Wrote csv
+
+
+
+20:36:18.866015 	 Running georgesung/llama2_7b_chat_uncensored 
+
+20:36:18.866048 	 Loading Model & Tokenizer
+20:37:04.246348 	 Creating Pipeline
+20:37:04.246548 	 Reading CSV
+20:37:04.249058 	 Questionnaire is OUS
+20:37:04.249850 	 Going through dataset
+20:43:22.387316 	 Done
+20:43:23.889100 	 Wrote csv
+
+
+
+20:43:24.024670 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+20:43:24.024695 	 Loading Model & Tokenizer
+20:44:02.584628 	 Creating Pipeline
+20:44:02.584899 	 Reading CSV
+20:44:02.587567 	 Questionnaire is OUS
+20:44:02.588331 	 Going through dataset
+20:51:47.861826 	 Done
+20:51:48.938393 	 Wrote csv
+
+
+
+20:51:49.077380 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+20:51:49.077401 	 Loading Model & Tokenizer
+20:52:18.286419 	 Creating Pipeline
+20:52:18.286577 	 Reading CSV
+20:52:18.288400 	 Questionnaire is OUS
+20:52:18.289188 	 Going through dataset
+20:52:30.078586 	 Done
+20:52:30.989797 	 Wrote csv
+
+
+
+20:52:31.127615 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+20:52:31.127641 	 Loading Model & Tokenizer
+20:53:04.993459 	 Creating Pipeline
+20:53:04.993610 	 Reading CSV
+20:53:04.995268 	 Questionnaire is OUS
+20:53:04.996046 	 Going through dataset
+21:45:48.482617 	 Done
+21:45:49.427547 	 Wrote csv
+
+
+
+21:45:49.615253 	 Running georgesung/llama2_7b_chat_uncensored 
+
+21:45:49.615282 	 Loading Model & Tokenizer
+21:46:31.792646 	 Creating Pipeline
+21:46:31.792816 	 Reading CSV
+21:46:31.796559 	 Questionnaire is OUS
+21:46:31.797353 	 Going through dataset
+21:47:24.655764 	 Done
+21:47:25.425263 	 Wrote csv
+
+
+
+21:47:25.525186 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+21:47:25.525215 	 Loading Model & Tokenizer
+21:48:00.800182 	 Creating Pipeline
+21:48:00.800414 	 Reading CSV
+21:48:00.803033 	 Questionnaire is OUS
+21:48:00.803779 	 Going through dataset
+21:55:11.141777 	 Done
+21:55:12.023631 	 Wrote csv
+
+
+
+21:55:12.122453 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+21:55:12.122474 	 Loading Model & Tokenizer
+21:55:40.485353 	 Creating Pipeline
+21:55:40.485505 	 Reading CSV
+21:55:40.487173 	 Questionnaire is OUS
+21:55:40.487960 	 Going through dataset
+21:56:02.290419 	 Done
+21:56:03.225293 	 Wrote csv
+
+
+
+21:56:03.330871 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+21:56:03.330901 	 Loading Model & Tokenizer
+21:56:35.560966 	 Creating Pipeline
+21:56:35.561110 	 Reading CSV
+21:56:35.562690 	 Questionnaire is OUS
+21:56:35.563409 	 Going through dataset
+22:18:44.542269 	 Done
+22:18:45.603373 	 Wrote csv
+
+
+
+22:18:45.757685 	 Running georgesung/llama2_7b_chat_uncensored 
+
+22:18:45.757716 	 Loading Model & Tokenizer
+22:19:35.573975 	 Creating Pipeline
+22:19:35.574300 	 Reading CSV
+22:19:35.579952 	 Questionnaire is OUS
+22:19:35.580795 	 Going through dataset
+22:20:15.976670 	 Done
+22:20:16.810981 	 Wrote csv
+
+
+
+22:20:16.924080 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+22:20:16.924109 	 Loading Model & Tokenizer
+22:20:52.634002 	 Creating Pipeline
+22:20:52.634238 	 Reading CSV
+22:20:52.637278 	 Questionnaire is OUS
+22:20:52.638111 	 Going through dataset
+22:21:53.671041 	 Done
+22:21:54.754427 	 Wrote csv
+
+
+
+22:21:54.863815 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+22:21:54.863835 	 Loading Model & Tokenizer
+22:22:24.124982 	 Creating Pipeline
+22:22:24.125155 	 Reading CSV
+22:22:24.127015 	 Questionnaire is OUS
+22:22:24.127774 	 Going through dataset
+22:22:40.178836 	 Done
+22:22:41.119958 	 Wrote csv
+
+
+
+22:22:41.253193 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+22:22:41.253218 	 Loading Model & Tokenizer
+22:23:13.096573 	 Creating Pipeline
+22:23:13.096739 	 Reading CSV
+22:23:13.098456 	 Questionnaire is OUS
+22:23:13.099176 	 Going through dataset
+22:53:16.187315 	 Done
+22:53:17.220766 	 Wrote csv
+
+
+
+22:53:17.378436 	 Running georgesung/llama2_7b_chat_uncensored 
+
+22:53:17.378468 	 Loading Model & Tokenizer
+22:54:05.046152 	 Creating Pipeline
+22:54:05.046372 	 Reading CSV
+22:54:05.049401 	 Questionnaire is OUS
+22:54:05.050140 	 Going through dataset
+22:54:57.697986 	 Done
+22:54:58.508665 	 Wrote csv
+
+
+
+22:54:58.656389 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+22:54:58.656417 	 Loading Model & Tokenizer
+22:55:43.663105 	 Creating Pipeline
+22:55:43.663299 	 Reading CSV
+22:55:43.666697 	 Questionnaire is OUS
+22:55:43.667458 	 Going through dataset
+22:58:01.834834 	 Done
+22:58:02.574238 	 Wrote csv
+
+
+
+22:58:02.696781 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+22:58:02.696803 	 Loading Model & Tokenizer
+22:58:32.460491 	 Creating Pipeline
+22:58:32.460693 	 Reading CSV
+22:58:32.463307 	 Questionnaire is OUS
+22:58:32.464129 	 Going through dataset
+22:58:43.181653 	 Done
+22:58:45.053117 	 Wrote csv
+
+
+
+22:58:45.159401 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+22:58:45.159434 	 Loading Model & Tokenizer
+22:59:17.916053 	 Creating Pipeline
+22:59:17.916253 	 Reading CSV
+22:59:17.918134 	 Questionnaire is OUS
+22:59:17.918917 	 Going through dataset
+23:34:11.579491 	 Done
+23:34:12.492679 	 Wrote csv
+
+
+
+23:34:12.678670 	 Running georgesung/llama2_7b_chat_uncensored 
+
+23:34:12.678700 	 Loading Model & Tokenizer
+23:35:03.454892 	 Creating Pipeline
+23:35:03.455081 	 Reading CSV
+23:35:03.457364 	 Questionnaire is OUS
+23:35:03.458203 	 Going through dataset
+23:35:56.255399 	 Done
+23:35:57.034035 	 Wrote csv
+
+
+
+23:35:57.165596 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+23:35:57.165624 	 Loading Model & Tokenizer
+23:36:33.725885 	 Creating Pipeline
+23:36:33.726072 	 Reading CSV
+23:36:33.728018 	 Questionnaire is OUS
+23:36:33.728864 	 Going through dataset
+23:43:39.621165 	 Done
+23:43:40.611909 	 Wrote csv
+
+
+
+23:43:40.737286 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+23:43:40.737308 	 Loading Model & Tokenizer
+23:44:08.447680 	 Creating Pipeline
+23:44:08.447890 	 Reading CSV
+23:44:08.450550 	 Questionnaire is OUS
+23:44:08.451328 	 Going through dataset
+23:44:43.376186 	 Done
+23:44:44.245690 	 Wrote csv
+
+
+
+23:44:44.356668 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+23:44:44.356696 	 Loading Model & Tokenizer
+23:45:13.990249 	 Creating Pipeline
+23:45:13.990412 	 Reading CSV
+23:45:13.992138 	 Questionnaire is OUS
+23:45:13.992965 	 Going through dataset
+00:35:32.539202 	 Done
+00:35:33.245420 	 Wrote csv
+
+
+
+00:35:33.431601 	 Running georgesung/llama2_7b_chat_uncensored 
+
+00:35:33.431637 	 Loading Model & Tokenizer
+00:36:16.366886 	 Creating Pipeline
+00:36:16.367152 	 Reading CSV
+00:36:16.370557 	 Questionnaire is OUS
+00:36:16.371370 	 Going through dataset
+00:37:09.195025 	 Done
+00:37:10.051411 	 Wrote csv
+
+
+
+00:37:10.166188 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+00:37:10.166218 	 Loading Model & Tokenizer
+00:37:46.017573 	 Creating Pipeline
+00:37:46.017766 	 Reading CSV
+00:37:46.019672 	 Questionnaire is OUS
+00:37:46.020507 	 Going through dataset
+00:44:34.279914 	 Done
+00:44:34.918518 	 Wrote csv
+
+
+
+00:44:35.032848 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+00:44:35.032871 	 Loading Model & Tokenizer
+00:45:00.221012 	 Creating Pipeline
+00:45:00.221167 	 Reading CSV
+00:45:00.222854 	 Questionnaire is OUS
+00:45:00.223782 	 Going through dataset
+00:45:19.233285 	 Done
+00:45:20.031576 	 Wrote csv
+
+
+
+00:45:20.141387 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+00:45:20.141418 	 Loading Model & Tokenizer
+00:45:50.205332 	 Creating Pipeline
+00:45:50.205503 	 Reading CSV
+00:45:50.207286 	 Questionnaire is OUS
+00:45:50.208061 	 Going through dataset
+01:16:06.453603 	 Done
+01:16:07.381160 	 Wrote csv
+
+
+
+01:16:07.580262 	 Running georgesung/llama2_7b_chat_uncensored 
+
+01:16:07.580291 	 Loading Model & Tokenizer
+01:16:50.003623 	 Creating Pipeline
+01:16:50.003847 	 Reading CSV
+01:16:50.005978 	 Questionnaire is OUS
+01:16:50.006796 	 Going through dataset
+01:17:32.987924 	 Done
+01:17:33.743638 	 Wrote csv
+
+
+
+01:17:33.874496 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+01:17:33.874527 	 Loading Model & Tokenizer
+01:18:09.990052 	 Creating Pipeline
+01:18:09.990245 	 Reading CSV
+01:18:09.992474 	 Questionnaire is OUS
+01:18:09.993323 	 Going through dataset
+01:19:09.767647 	 Done
+01:19:10.736748 	 Wrote csv
+
+
+
+01:19:10.845878 	 Running meta-llama/Llama-2-7b-chat-hf 
+
+01:19:10.845904 	 Loading Model & Tokenizer
+01:19:36.842639 	 Creating Pipeline
+01:19:36.842805 	 Reading CSV
+01:19:36.844733 	 Questionnaire is OUS
+01:19:36.845591 	 Going through dataset
+01:19:55.726465 	 Done
+01:19:56.573823 	 Wrote csv
+
+
+
+01:19:56.703036 	 Running meta-llama/Llama-2-13b-chat-hf 
+
+01:19:56.703063 	 Loading Model & Tokenizer
+01:20:29.286034 	 Creating Pipeline
+01:20:29.286238 	 Reading CSV
+01:20:29.288812 	 Questionnaire is OUS
+01:20:29.289854 	 Going through dataset
+01:41:10.845066 	 Done
+01:41:11.767907 	 Wrote csv
+
+
+
+01:41:11.941103 	 Running georgesung/llama2_7b_chat_uncensored 
+
+01:41:11.941133 	 Loading Model & Tokenizer
+01:41:52.713793 	 Creating Pipeline
+01:41:52.714076 	 Reading CSV
+01:41:52.717197 	 Questionnaire is OUS
+01:41:52.718029 	 Going through dataset
+01:42:43.122716 	 Done
+01:42:44.209507 	 Wrote csv
+
+
+
+01:42:44.327478 	 Running Tap-M/Luna-AI-Llama2-Uncensored 
+
+01:42:44.327509 	 Loading Model & Tokenizer
+01:43:20.082514 	 Creating Pipeline
+01:43:20.082727 	 Reading CSV
+01:43:20.084845 	 Questionnaire is OUS
+01:43:20.085635 	 Going through dataset
+01:46:55.927536 	 Done
+01:46:56.673323 	 Wrote csv
+
+
+
+API called, response code: 200
