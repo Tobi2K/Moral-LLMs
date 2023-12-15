@@ -200,7 +200,7 @@ if __name__ == "__main__":
         "Tap-M/Luna-AI-Llama2-Uncensored",
     ]
 
-    ordering = ["Q", "St", "Sc"]
+    ordering = ["St", "Q", "Sc"]
     # Go through all combinations
     for parameters in itertools.product([True, False], repeat=5):
         prompt, prompt_title = generate_prompt(
