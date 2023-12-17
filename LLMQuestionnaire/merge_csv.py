@@ -106,18 +106,22 @@ if __name__ == "__main__":
     
     rootdir = "./logs/"
 
-    ordering = ["Q", "St", "Sc"]
-    # Go through all combinations
-    for parameters in itertools.product([True, False], repeat=5):
-        prompt, prompt_title = generate_prompt(
-            ordering, *parameters, title_stub="OUS-"
-        )
-        df = pd.read_csv("questions.csv")["OUS"]
-        for model in models:
-            col_name ="Answers " + model + " OUS"
-            for file_path in glob.glob(os.path.join(rootdir + model.replace("/", "") + "/", prompt_title + "-2023-*.csv")):
-                df_tmp = pd.read_csv(file_path)
-                df_col = df_tmp[col_name]
-                df = pd.concat([df, df_col], axis=1)
-        df.to_csv("logs/merged/" + prompt_title + ".csv", index=False, encoding="utf-8")
+    orderings = ["St", "Q", "Sc"]
+    for ordering in itertools.permutations(orderings):
+        ordering = list(ordering)
+        # Go through all combinations
+        for parameters in itertools.product([True, False], repeat=5):
+            prompt, prompt_title = generate_prompt(
+                ordering, *parameters, title_stub="OUS-"
+            )
+            df = pd.read_csv("questions.csv")["OUS"]
+            for model in models:
+                col_name ="Answers " + model + " OUS"
+                for file_path in glob.glob(os.path.join(rootdir + model.replace("/", "") + "/", prompt_title + "-2023-*.csv")):
+                    df_tmp = pd.read_csv(file_path)
+                    df_col = df_tmp[col_name]
+                    df = pd.concat([df, df_col], axis=1)
+            file_path = "logs/merged/" + "".join(ordering) + "/" + prompt_title + ".csv"
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            df.to_csv(file_path, index=False, encoding="utf-8")
 
