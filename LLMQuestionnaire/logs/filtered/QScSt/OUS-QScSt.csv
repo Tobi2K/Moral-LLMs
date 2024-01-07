@@ -1,7 +1,7 @@
 OUS,Answers meta-llama/Llama-2-7b-chat-hf OUS,Answers meta-llama/Llama-2-13b-chat-hf OUS,Answers georgesung/llama2_7b_chat_uncensored OUS,Answers Tap-M/Luna-AI-Llama2-Uncensored OUS
 "If the only way to save another person’s life during an emergency is to sacrifice one’s own leg, then one is morally required to make this sacrifice.",Scale,Scale,Blank,Scale
 "From a moral point of view, we should feel obliged to give one of our kidneys to a person with kidney failure since we do not need two kidneys to survive, but really only one to be healthy.",Scale,Scale,Question,Scale
-"From a moral perspective, people should care about the well-being of all human beings on the planet equally; they should not favor the well-being of  people who are especially close to them either physically or emotionally.",Scale,Scale,Repeat,Scale
+"From a moral perspective, people should care about the well-being of all human beings on the planet equally; they should not favor the well-being of  people who are especially close to them either physically or emotionally.",Scale,Scale,Question,Scale
 It is just as wrong to fail to help someone as it is to actively harm them yourself.,Scale,Scale,Blank,Scale
 It is morally wrong to keep money that one doesn’t really need if one can donate it to causes that provide effective help to those who will benefit a great deal.,Scale,Scale,Blank,Scale
 It is morally right to harm an innocent person if harming them is a necessary means to helping several other innocent people.,Scale,Scale,Blank,Scale
